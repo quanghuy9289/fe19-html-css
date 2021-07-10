@@ -1,22 +1,127 @@
 /* So the HTML5 structural tags work in older browsers */
-article, aside, figure, footer, header, nav, section {
-    display: block;
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+  display: block;
 }
-
+html {
+  background-color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
 /* the styles for the elements */
 body {
-	font-family: Arial, Helvetica, sans-serif;
-    font-size: 87.5%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 87.5%;
+  width: 600px;
+  border: 3px solid #931420;
+  background-color: #fffded;
+  margin: 0 auto;
 }
 
 /* the styles for the header */
-header img {
-	float: left;
+.header {
+  border-bottom: 3px solid #931420;
+  padding-top: 1.5em;
+  padding-bottom: 2em;
+  background: linear-gradient(
+    30deg,
+    #f6bb7300,
+    #f6bb7330,
+    #ffffff50,
+    #f6bb7380,
+    #f6bb73
+  );
 }
-
+.header__img {
+  float: left;
+  padding-left: 2em;
+  padding-right: 2em;
+  padding-bottom: 1em;
+}
+.header__heading--1 {
+  font-size: 170%;
+  color: #800000;
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
+}
+.header__heading--2 {
+  font-size: 130%;
+  font-style: italic;
+}
+.shadow {
+  text-shadow: 3px 3px 5px #800000;
+}
 /* the styles for the section */
 section {
-	clear: left;
+  clear: left;
+}
+p {
+  padding-bottom: 0.5em;
+}
+ul {
+  padding-bottom: 0.25em;
+  padding-left: 1.25em;
+}
+li {
+  padding-bottom: 0.35em;
+}
+.main {
+  padding: 0 30px;
+}
+.main__heading--3 {
+  font-size: 150%;
+  border: 5px double #931420;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px #800000;
+  padding: 0.3em 0;
+}
+.main__heading--1 {
+  font-size: 130%;
+  color: #800000;
+  padding-top: 0.5em;
+  padding-bottom: 0.25em;
 }
 
+.main__heading--2 {
+  font-size: 130%;
+  color: #800000;
+  padding-bottom: 0.25em;
+}
+.main__text--2 {
+  font-style: italic;
+  padding: 0 2em;
+}
+.main__h3 {
+  font-size: 105%;
+}
+.main__h3--link:hover,
+.main__h3--link:visited {
+  font-style: italic;
+}
 /* the styles for the footer */
+.footer {
+  background-color: #931420;
+  color: white;
+}
+.footer__content {
+  text-align: center;
+}
+.main__h3--time {
+  padding-bottom: 0.25em;
+}
+
+footer p {
+  padding: 1em 0;
+}
+.chauho {
+  font-size: 12px;
+  color: white;
+  font-style: italic;
+}
