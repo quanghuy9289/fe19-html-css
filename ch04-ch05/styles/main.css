@@ -1,0 +1,121 @@
+/* So the HTML5 structural tags work in older browsers */
+article, aside, figure, footer, header, nav, main {
+    display: block;
+}
+
+html {
+	background-color: white;
+}
+
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+	width: 600px;
+	margin: 0 auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+}
+
+/* the styles for the header */
+header {
+	border-bottom: 3px solid #931420;
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%,white 50%, #f6bb73 80%, #f6bb73 100%);
+}
+
+header img {
+	float: left;
+}
+
+header h2 {
+	font-size: 170%;
+	color: #800000;
+	text-align: center;
+}
+
+header h3 {
+	font-size: 130%;
+	font-style: italic;
+	text-align: center;	
+}
+
+header .shadow{
+	text-shadow: 2px 2px 6px #800000;
+}
+
+/* the styles for the section */
+main {
+	clear: left;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+main image {
+	float: left;
+	padding-bottom: 1em;
+}
+
+main p {
+	margin: 0;
+	padding-bottom: 0.5em;
+}
+
+main blockquote {
+	padding-left: 2em;
+	padding-right: 2em;
+	font-style: italic;
+}
+
+main ul{
+	padding-left: 1.25em;
+	padding-bottom: 0.25em;
+}
+
+main li {
+	padding-bottom: 0.35em;
+}
+
+main a {
+	color: blue;
+}
+
+main a:hover {
+	color: #931420;
+}
+
+main h1 {
+	text-align: center;
+	padding-bottom: 0.3em;
+	padding-top: 0.3em;
+	font-size: 150%;
+	border: 3px solid #931420;
+	border-radius: 10px;
+	box-shadow: 2px 4px #800000;
+}
+
+main h2 {
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	font-size: 130%;
+	color: #800000;
+}
+
+main h3 {
+	font-size: 105%;
+	padding-bottom: 0.25em;
+	margin: 0;
+}
+/* the styles for the footer */
+footer {
+	height: 40px;
+	background-color: #f1a547;
+}
+
+footer p {
+	padding-top: 1em;
+	padding-bottom: 1em;
+	color: #fff;
+	text-align: center;
+}
