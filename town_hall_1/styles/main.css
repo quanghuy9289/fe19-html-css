@@ -1,3 +1,9 @@
+/* So the HTML5 structural tags work in older browsers */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+
+/* Common style */
 * {
     margin: 0;
     padding: 0;
