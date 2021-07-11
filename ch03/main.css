@@ -1,0 +1,40 @@
+/* common style */
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 100%;
+}
+h2 {
+  font-size: 150%;
+}
+header img {
+  float: both;
+}
+header h3 {
+  color: #0ff;
+  text-shadow: 2px 2px 2px maroon;
+  text-align: center;
+}
+header h2 {
+  color: green;
+  text-align: center;
+  font-style: italic;
+}
+
+/* style for section */   
+p+h2 {
+  color:rgb(100%, 50%, 30%);
+}
+section h1 {
+  font-size: 200%;
+}
+blockquote+h2 {
+  color: blueviolet;
+}
+section a {
+  color: rgb(17, 158, 252);
+}
+/* style for footer */
+footer p {
+  text-align: left;
+  font-size: 100%;
+}
