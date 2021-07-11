@@ -1,0 +1,39 @@
+html {
+    font-family: 'Times New Roman', Times, serif;
+}
+header img {
+    float: left;
+    clear: left;
+}
+header span {
+    text-shadow: 2px 2px 4px #800000;
+}
+header h2 {
+    font-size: 170%;
+    color: #800000;
+    margin-left: 110px;
+}
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+    margin-left: 110px;
+}
+section h1 {
+    font-size: 150%;
+}
+section h2 {
+    font-size: 130%;
+    color: #800000;
+}
+section h3 {
+    font-size: 105%;
+}
+a:hover, a:focus {
+    font-style: italic;
+}
+section span {
+    color: blue;
+}
+footer p {
+    text-align: center;
+}
