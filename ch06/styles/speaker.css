@@ -74,7 +74,7 @@ main a {
 
 main a:hover {
 	color: #931420;
-	text-decoration: none;
+    text-decoration: none;
     font-size: 110%;
 }
 
@@ -115,11 +115,11 @@ section li {
 }
 
 section h1 {
+    color: #800000;
 	margin: 0;
 	padding-bottom: 0.75em;
 	padding-top: 0.5em;
 	font-size: 150%;
-	border-bottom: 2px solid #800000;
 }
 
 section h2 {
