@@ -25,7 +25,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 87.5%;
-    width: 800px;
+    width: 863.5px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -57,18 +57,62 @@ header {
 }
 
 
+/* the styles for the navigation */
+
+.nav-menu ul {
+    background-color: #800000;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    li {
+        list-style-type: none;
+        width: 20%;
+        text-align: center;
+        a {
+            color: #fff;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: block;
+        }
+        a:hover {
+            background-color: #57070f;
+            transition: 0.4s;
+        }
+    }
+    li:hover>ul {
+        display: block;
+        transition: 0.4s;
+    }
+    ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        li {
+            width: 100%;
+            a {
+                padding: 14px 10px;
+            }
+        }
+    }
+    .current a {
+        color: yellow;
+    }
+}
+
+
 /* the styles for the section */
 
 main {
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    clear: both;
     .content-left {
         width: 215px;
         padding: 0px 0px 20px 20px;
     }
     .content-rghit {
-        width: 525px;
+        width: 65%;
         padding: 0px 20px 20px 0px;
         .speaker {
             .container {
