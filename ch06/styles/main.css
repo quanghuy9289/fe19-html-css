@@ -176,15 +176,3 @@ footer p {
 	color: #fff;
 	text-align: center;
 }
-
-/* the styles for the Navigation */
-
-#nav_menu ul{
-	list-style-type: none;
-	position: relative;
-}
-
-#nav_menu ul li {
-	list-style-type: none;
-	
-}
