@@ -132,7 +132,6 @@ header h3 {
 }
 
 /* Main */
-
 main {
     clear: left;
     padding-bottom: 15px;
@@ -154,10 +153,13 @@ main section {
     padding: 0.3em 0;
 } */
 
-main section h2 {
-    font-size: 130%;
+main section h1 {
     color: #800000;
-    padding: 0.5em 0 0.25em;
+}
+
+main section h2 {
+    font-size: 105%;
+    padding: 0.5em 0px 0.25em;
 }
 
 main section h3 {
@@ -166,8 +168,8 @@ main section h3 {
 
 main section article {
     padding: 0.5em 0;
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000;
+    /* border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000; */
 
 }
 
@@ -179,6 +181,7 @@ main section article img {
 
 main section article h2 {
     padding-top: 0;
+    
 }
 
 main section article h3 {
@@ -187,13 +190,12 @@ main section article h3 {
 }
 
 main blockquote {
-    padding: 0 2em;
+    padding: 0.5em 2em 0 2em;
     font-style: italic;
 }
 
 main ul {
     padding: 0 0 0.25em 1.25em;
-    list-style-type: circle;
 }
 
 main ul li {
