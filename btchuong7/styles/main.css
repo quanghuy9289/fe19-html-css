@@ -8,7 +8,7 @@ article, aside, figure, footer, header, nav, section {
 }
 /* the styles for the elements */
 body{
-	width: 600px;
+	width: 800px;
 	margin: 0 auto;
 	border: 3px solid #931420;
 	background-color: #fffded;
@@ -26,7 +26,7 @@ header{
 	padding-top: 1.5em;
 	padding-bottom: 2em;
 	background-image: linear-gradient(30deg,#f6bb73 0%, white 50%,#f6bb73 80%, #f6bb73 100% );
-	width: 600px;
+	width: 800px;
 
 }
 header h2{
@@ -63,15 +63,15 @@ section blockquote{
 	padding: 0 2em;
 	font-style: italic;
 }
-section h1{
-	font-size: ;
+h1{
+	font-size: 150%;
 	/* border-top: 3px solid #931420;
 	border-bottom: 3px solid #931420; */
-	border: 5px double #931420;
-	border-radius: 10px;
+	/* border: 5px double #931420;
+	border-radius: 10px; */
 	padding: 0.3em 0;
-	box-shadow: 3px 3px 0 3px #931420;
-	padding-left: 50px;
+	/* box-shadow: 3px 3px 0 3px #931420; */
+	padding-left: 5px;
 }
 section h2{
 	font-size: 130%;
@@ -89,14 +89,25 @@ ul{
 	padding-left: 1.25em;
 	padding-bottom: 0.25em;
 }
+main{
+	float: left;
+	width: 215px;
+	
+}
+aside{
+	float: right;
+	width: 525px;
+	
 
-
+	
+}
 /* the styles for the footer */
 
 footer {
 	
 	background-color: #931420;
 	padding: 0 30px;
+	clear: both;
 
 }
 footer p{
@@ -108,9 +119,95 @@ footer p{
 
 	
 }
+/* ARTICLE ELEMENT */
+article h1{
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	margin: 0;
+
+}
+article{
+	padding: 0.5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article img{
+	float: right;
+	margin-top: 10px;
+	margin-left: 5px;
+	/* border: 1px solid black	; */
+	
+}
+article h2{
+	padding: 0;
+}
+article h3{
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+#nav-menu{
+	margin: 0;
+	padding: 0;
+
+}
+
+.menucha > li{
+	float: left;
+	list-style: none;
+	background-color: #800000;
+}
+
+.menucha  li  a{
+	display: block;
+	width: 160px;
+	text-align: center;
+	text-decoration: none;
+	padding: 1em 0;
+	color: white;
+	font-weight: bold;
+}
+.menucha{ 
+	display: inline;
+	position: relative;
+	padding: 0;
+}
+.submenu {
+	display: none;
+	position: absolute;
 
 
 
+}
+.submenu li {
+	list-style: none;
+	background-color: #800000;
+	padding: 5px 5px;
+	color: white;
+	font-weight: bold;
+	border-bottom: 1px solid white;
+	text-align: center;
+	
+}
+.submenu >li >a{
+	color: white;
+	
+}
+.menucha > li > a:hover{
+	background-color: orange;
+}
+
+.menucha > li:hover >ul{
+	display: block;
+}
+.menucha>ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.menucha>li>a>.lastitem{
+	width: px;
+}
 
 
 
