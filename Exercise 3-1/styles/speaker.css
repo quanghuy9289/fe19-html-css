@@ -223,7 +223,7 @@ footer p {
 aside img {
   padding-bottom: 1em;
 }
-@media only screen and (max-width: 635px) {
+@media only screen and (max-width: 631px) {
   .aside__right,
   .section__right {
     float: none;
