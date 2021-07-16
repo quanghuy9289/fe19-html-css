@@ -1,0 +1,264 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #fff;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 98%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+p {
+    padding-bottom: 0.5em;
+  }
+
+h1 {
+    font-size: 150%;
+    padding-top: 0.5em;
+    padding-bottom: 0.25em;
+}
+
+header {
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    background-image: -webkit-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -moz-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -o-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+  }
+
+header img {
+    float: left;
+    margin: 0px 30px 16px 30px ;
+}
+
+header h2 {
+    font-size: 170%;
+    color: #800000;
+}
+
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+.shadow {
+    text-shadow: 2px -2px 2px #800000;
+}
+
+main {
+  padding-bottom: 15px;
+  display: flex;
+}
+
+main section {
+    padding: 0 2.5% 20px;
+    flex-basis: 70%;
+    order: 2;
+}
+
+main section h2 {
+    font-size: 130%;
+    color: #800000;
+    padding: 0.5rem 0 0.25rem;
+}
+
+main section h3 {
+    font-size: 105%;
+    padding-bottom: 0.25rem;
+}
+
+main section article {
+    padding: 0.5rem 0;
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+
+main section article img {
+    float: right;
+    margin: 1rem 0 1rem 1rem;
+    border: 1px solid black;
+}
+
+main section article h2 {
+    padding-top: 0;
+  }
+
+main aside {
+    padding-left: 2.5%;
+    padding-bottom: 20px;
+    flex-basis: 30%;
+    order: 1;
+}
+
+main aside h2 {
+    font-size: 130%;
+    color: #800000;
+    padding: 0.5em 0 0.25rem;
+}
+
+main aside h3 {
+    font-size: 105%;
+    padding-bottom: 0.25rem;
+}
+
+main aside img {
+    padding-bottom: 1rem;
+}
+
+main blockquote {
+    padding: 0 2rem;
+    font-style: italic;
+}
+
+main ul {
+    padding-bottom: 0.25rem;
+    padding-left: 1.25rem;
+}
+
+main ul li {
+    padding-bottom: 0.35em;
+}
+
+footer {
+    clear: both;
+    border-top: 3px solid #931420;
+    background-color: #931420;
+    color: white;
+}
+
+footer p {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+#nav_menu {
+  position: relative;
+}
+
+#nav_menu {
+    position: relative;
+  }
+
+  #nav_menu ul {
+    list-style-type: none;
+    clear: left;
+  }
+
+  #nav_menu ul::after {
+    content: " ";
+    clear: both;
+    display: block;
+  }
+
+  #nav_menu ul li {
+    float: left;
+    width: 20%;
+  }
+
+  #nav_menu ul li a {
+    display: block;
+    text-align: center;
+    padding: 1em 0;
+    text-decoration: none;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+  }
+
+  #nav_menu li.current a {
+    color: yellow;
+  }
+
+  #nav_menu ul li ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+  }
+
+  #nav_menu ul li:hover ul {
+    display: block;
+  }
+  
+  #nav_menu ul li ul li {
+    float: none;
+  }
+
+a:hover,
+a:focus {
+    font-style: italic;
+}
+
+main section ul {
+    list-style-type: circle;
+  }
+
+#mobile_menu {
+  display: none;
+}
+
+
+
+
+@media only screen and (max-width: 960px) {
+  main section h2 {
+    font-size: 120%;
+  }
+  main section h1 {
+    font-size: 140%;
+  }
+  main aside h2 {
+    font-size: 120%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  header img {
+    float: none;
+  }
+  header {
+  text-align: center;
+  }
+  #nav_menu {
+    display: none;
+  }
+  main aside {
+    padding-right: 2.5%;
+    width: 95%;
+    order: 2;
+  }
+  main section {
+    width: 95%;
+    order: 1;
+  }
+  main aside div.speakers {
+    column-count: 3;
+  }
+  main section article img {
+    max-width: 30%;
+  }
+  #mobile_menu {
+    display: block;
+  }
+  main {
+    flex-direction: column;
+  }
+  
+}
+
+@media only screen and (max-width: 479px) {
+  body {
+    font-size: 90%;
+  }
+}  
