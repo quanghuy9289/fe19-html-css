@@ -10,6 +10,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="/Speaker/style.css">
     <script src="/Js/index.js"></script>
+    <link rel="stylesheet" href="../Style.css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-
+					2.1.3.min.js"></script>
+    <script src="../Js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav-menu').slicknav({
+                prependTo: "#mobile-menu"
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -22,6 +33,24 @@
             <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
         </section>
     </header>
+
+    <nav id="mobile-menu"></nav>
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li class="current"><a href="">Home</a></li>
+            <li><a href="">Speaker</a></li>
+            <li><a href="">Luncheons</a></li>
+            <li><a href="">Ticket</a></li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="">Our History</a></li>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Past Speakers</a></li>
+                    <li><a href="">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
 
     <main class="main-content" id="main">
         <section class="content-rghit">

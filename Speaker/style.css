@@ -25,7 +25,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 87.5%;
-    width: 800px;
+    width: 100%;
+    max-width: 960px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -38,12 +39,12 @@ header {
     display: flex;
     align-items: center;
     border-bottom: 3px solid #931420;
-    padding: 1.5em 30px 2em 30px;
+    padding: 2em;
     background-image: linear-gradient(30deg, #f6bb73 0%, #fff 50%, #f6bb73 100%);
 }
 
 header .row {
-    margin-left: 30px;
+    margin-left: 1.875em;
 }
 
 header .row h2 {
@@ -61,6 +62,62 @@ header .row h3 span {
 }
 
 
+/* the styles for the navigation */
+
+#mobile-menu {
+    display: none;
+}
+
+.nav-menu ul {
+    background-color: #800000;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    width: 20%;
+    text-align: center;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.875em 1.25em;
+    display: block;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #57070f;
+    transition: 0.4s;
+}
+
+.nav-menu ul li:hover>ul {
+    display: block;
+    transition: 0.4s;
+}
+
+.nav-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20%;
+}
+
+.nav-menu ul ul li {
+    width: 100%;
+}
+
+.nav-menu ul ul li a {
+    padding: 0.875em 0.5em;
+}
+
+.nav-menu ul .current a {
+    color: yellow;
+}
+
+
 /* the styles for the section */
 
 main {
@@ -70,13 +127,14 @@ main {
 }
 
 main .content-left {
-    width: 215px;
-    padding: 0px 0px 20px 20px;
+    width: 30%;
+    padding: 0 0 1.25em 1.25em;
 }
 
 main .content-left button {
     background-color: #931420;
     border-radius: 5px;
+    margin-bottom: 2em;
 }
 
 main .content-left button a {
@@ -91,8 +149,8 @@ main .content-left button a:hover {
 }
 
 main .content-rghit {
-    width: 525px;
-    padding: 0px 20px 20px 0px;
+    width: 65%;
+    padding: 0 1.25em 1.25em 1.25em;
 }
 
 main .content-rghit .speaker .container {
@@ -100,8 +158,9 @@ main .content-rghit .speaker .container {
 }
 
 main .content-rghit .speaker .container img {
-    padding-left: 20px;
+    padding-left: 1.5em;
     float: right;
+    max-width: 100%;
 }
 
 main h1 {
@@ -146,13 +205,64 @@ main li {
 
 footer {
     background-color: #931420;
-    padding: 0px 30px;
+    padding: 0 2em;
 }
 
 footer p {
     text-align: center;
     color: #fff;
     padding: 1em 0em;
+}
+
+
+/* the styles for the tablet */
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+    }
+    header .row {
+        margin: 0;
+    }
+    header .row h2,
+    header .row h3 {
+        text-align: center;
+    }
+    #mobile-menu {
+        display: block;
+    }
+    #nav-menu {
+        display: none;
+    }
+}
+
+
+/* the styles for the mobile */
+
+@media screen and (max-width: 612px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+    }
+    main .content-left {
+        width: 100%;
+        padding: 0;
+    }
+    main .content-rghit {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    main .content-rghit .speaker .container img {
+        padding-left: 0;
+        float: none;
+        max-width: 100%;
+    }
 }
 
 

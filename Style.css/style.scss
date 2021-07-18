@@ -25,7 +25,8 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 87.5%;
-    width: 863.5px;
+    width: 99%;
+    max-width: 960px;
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
@@ -38,10 +39,10 @@ header {
     display: flex;
     align-items: center;
     border-bottom: 3px solid #931420;
-    padding: 1.5em 30px 2em 30px;
+    padding: 2em;
     background-image: linear-gradient(30deg, #f6bb73 0%, #fff 50%, #f6bb73 100%);
     .row {
-        margin-left: 30px;
+        margin-left: 1.875em;
         h2 {
             font-size: 170%;
             color: #800000;
@@ -59,6 +60,10 @@ header {
 
 /* the styles for the navigation */
 
+#mobile-menu {
+    display: none;
+}
+
 .nav-menu ul {
     background-color: #800000;
     display: flex;
@@ -71,7 +76,7 @@ header {
         a {
             color: #fff;
             text-decoration: none;
-            padding: 14px 20px;
+            padding: 0.875em 1.25em;
             display: block;
         }
         a:hover {
@@ -87,10 +92,11 @@ header {
         display: none;
         position: absolute;
         top: 100%;
+        width: 20%;
         li {
             width: 100%;
             a {
-                padding: 14px 10px;
+                padding: 0.875em 0.5em;
             }
         }
     }
@@ -108,19 +114,27 @@ main {
     justify-content: space-between;
     clear: both;
     .content-left {
-        width: 215px;
-        padding: 0px 0px 20px 20px;
+        width: 30%;
+        padding: 0 0 1.25em 1.25em;
     }
     .content-rghit {
         width: 65%;
-        padding: 0px 20px 20px 0px;
+        padding: 0 1.25em 1.25em 1.25em;
         .speaker {
             .container {
                 display: flex;
                 border-bottom: 3px solid #931420;
                 padding-bottom: 1em;
+                justify-content: space-between;
+                .content {
+                    width: 55%;
+                }
+                .image {
+                    width: 40%;
+                }
                 img {
-                    padding-left: 20px;
+                    width: 250px;
+                    max-width: 100%;
                 }
             }
         }
@@ -161,10 +175,56 @@ main {
 
 footer {
     background-color: #931420;
-    padding: 0px 30px;
+    padding: 0 2em;
     p {
         text-align: center;
         color: #fff;
         padding: 1em 0em;
+    }
+}
+
+
+/* the styles for the tablet */
+
+@media screen and(max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+        .row {
+            margin: 0;
+            h2,
+            h3 {
+                text-align: center;
+            }
+        }
+    }
+    #mobile-menu {
+        display: block;
+    }
+    #nav-menu {
+        display: none;
+    }
+    main {
+        .speaker {}
+    }
+}
+
+
+/* the styles for the mobile */
+
+@media screen and (max-width: 612px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+        .content-left {
+            width: 100%;
+            padding: 0;
+        }
+        .content-rghit {
+            width: 100%;
+            padding: 0;
+        }
     }
 }

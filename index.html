@@ -9,6 +9,17 @@
     <link rel="shortcut icon" href="/Img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="/Style.css/style.css">
     <script src="/Js/index.js"></script>
+    <link rel="stylesheet" href="/Style.css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-
+					2.1.3.min.js"></script>
+    <script src="/Js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav-menu').slicknav({
+                prependTo: "#mobile-menu"
+            });
+        });
+    </script>
 </head>
 
 <body>
@@ -22,7 +33,8 @@
         </section>
     </header>
 
-    <nav class="nav-menu" id="menu">
+    <nav id="mobile-menu"></nav>
+    <nav class="nav-menu" id="nav-menu">
         <ul>
             <li class="current"><a href="">Home</a></li>
             <li><a href="">Speaker</a></li>
@@ -51,14 +63,14 @@
                 <h1>Speaker of the Month</h1>
                 <h2>Fossil Threads in the Web of Life</h2>
                 <div class="container">
-                    <article>
+                    <article class="content">
                         <h3>February<br>Scott Sampson </h3>
                         <p>What's 75 million years old and brand spanking new? A teenage Utahceratops! Come to the Saroyan, armed with your best dinosaur roar, when Scott Sampson, Research Curator at the Utah Museum of Natural History, steps to the podium.
                             Sampson's research has focused on the ecology and evolution of late Cretaceous dinosaurs and he has conducted fieldwork in a number of countries in Africa.</p>
                         <p><a href="/Speaker/sampson.html">Read more.</a>&nbsp;<a href="media/sampson.swf" target="_blank">Or play video.</a></p>
                     </article>
-                    <article>
-                        <img src="/Img/sampson_dinosaur.jpg" alt="">
+                    <article class="image">
+                        <img src="/Img/sampson_dinosaur.jpg" alt="sampson">
                     </article>
                 </div>
             </section>
