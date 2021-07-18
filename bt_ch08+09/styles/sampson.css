@@ -25,7 +25,6 @@ p {
 }
 
 h1 {
-  font-size: 150%;
   padding-top: 0.5em;
   padding-bottom: 0.25em;
   margin: 0;
@@ -37,6 +36,7 @@ h1 {
   -webkit-background-clip: text;
   background-clip: text;
 }
+
 
 /* the styles for the header */
 header {
@@ -88,6 +88,7 @@ header h3 {
 #nav_menu ul li {
   float: left;
   width: 20%;
+  position: relative;
 }
 
 #nav_menu ul li a {
@@ -117,6 +118,7 @@ header h3 {
 
 #nav_menu ul li ul li {
   float: none;
+  width: 100%;
 }
 
 /* the styles for the section */
@@ -131,10 +133,17 @@ main section {
   padding: 0 20px 20px;
 }
 
-main section h2 {
-  font-size: 130%;
+main section h1 {
   color: #800000;
+}
+main section h2 {
+  font-size: 105%;
   padding: 0.5em 0 0.25em;
+  background-image: linear-gradient(to right bottom, #fc0909ea, #e6b207);
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
 }
 
 main section h3 {
@@ -144,8 +153,9 @@ main section h3 {
 
 main section article {
   padding: 0.5em 0;
-  border-top: 2px solid #800000;
-  border-bottom: 2px solid #800000;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
 }
 
 main section article img {
@@ -163,10 +173,6 @@ main section article h3 {
   padding-bottom: 0.25em;
 }
 
-main section ul {
-  list-style-type: circle;
-}
-
 main aside {
   width: 215px;
   float: right;
@@ -177,8 +183,6 @@ main aside {
 main aside h2 {
   font-size: 130%;
   color: #800000;
-  padding: 0.5em 0 0.25em;
-  font-size: 130%;
   padding: 0.5em 0 0.25em;
   background-image: linear-gradient(to right bottom, #fc0909ea, #e6b207);
   display: inline-block;
@@ -208,15 +212,6 @@ main ul {
 
 main ul li {
   padding-bottom: 0.35em;
-}
-
-a:link,
-a:visited {
-  color: #161493;
-}
-a:hover,
-a:focus {
-  color: black;
 }
 
 /* the styles for the footer */
