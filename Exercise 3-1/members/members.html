@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>San Joaquin Valley Town Hall</title>
+    <link rel="shortcut icon" href="../images/favicon.ico" />
+    <link rel="stylesheet" href="../styles/members.css" />
+    <link rel="stylesheet" href="../styles/slicknav.css" />
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#nav-menu").slicknav({ prependTo: "#mobile-menu" });
+      });
+    </script>
+  </head>
+
+  <body>
+    <header class="header">
+      <img class="header__img" src="../images/town_hall_logo.gif"
+      alt="Town_Hall_logo" height="80" / >
+      <h2 class="header__heading--1">San Joaquin Valley Town Hall</h2>
+      <h3 class="header__heading--2 shadow">
+        Celebrating our 75<sup>th</sup> Year
+      </h3>
+    </header>
+    <nav id="mobile-menu"></nav>
+    <nav id="nav-menu">
+      <ul>
+        <li><a class="nav__current" href="../index.html">Home</a></li>
+        <li>
+          <a href="#">Speakers</a>
+          <ul>
+            <li><a href="#">Jeffrey Toobin</a></li>
+            <li><a href="#">Andrew Ross Sorkin</a></li>
+            <li><a href="#">Amy Chua</a></li>
+            <li>
+              <a href="#">Scott Sampson</a>
+              <ul>
+                <li><a href="#">September 2010</a></li>
+                <li><a href="../speakers/sampson.html">February 2015</a></li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+        <li><a href="#">Become a member</a></li>
+        <li><a href="#">Tickets</a></li>
+        <li class="last-item">
+          <a href="#">About Us</a>
+          <ul>
+            <li><a href="#">Our History</a></li>
+            <li><a href="#">Board of Directors</a></li>
+            <li><a href="#">Past Speakers</a></li>
+            <li><a href="#">Contact Information</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+    <main class="main">
+      <form class="main__form" action="" name="member" method="POST">
+        <h1>Become a Member</h1>
+        <fieldset class="main__form--1">
+          <legend>Register Information</legend>
+          <label for="email">Email:</label>
+          <input type="email" name="email" id="email" /><br />
+          <label for="password">Password:</label>
+          <input type="password" name="password" id="password" /> <br />
+          <label for="verify password">Verify Password:</label>
+          <input type="password" name="verify password" id="verify password" />
+        </fieldset>
+        <fieldset class="main__form--2">
+          <legend>Member Information</legend>
+          <label for="firstName">First Name:</label>
+          <input type="text" name="firstName" id="firstName" /><br />
+          <label for="lastName">Last Name:</label>
+          <input type="text" name="lastName" id="lastName" /><br />
+          <label for="address">Address:</label>
+          <input type="text" name="address" id="address" /><br />
+          <label for="city">City:</label>
+          <input type="text" name="city" id="city" /><br />
+          <label for="state">State:</label>
+          <input type="text" name="state" id="state" /><br />
+          <label for="zipcode">ZIP Code:</label>
+          <input type="number" name="zipcode" id="zipcode" /><br />
+          <label for="phone">Phone Number:</label>
+          <input type="number" name="phone" id="phone" />
+        </fieldset>
+        <fieldset class="main__form--3">
+          <legend>Membership Information</legend>
+          <label for="membership">Membership Type</label>
+          <select name="membership" id="membership">
+            <option value="junior">Junior</option>
+            <option value="regular">Regular</option>
+            <option value="charter">Charter</option></select
+          ><br />
+          <label for="startingdate">Starting Date</label>
+          <input type="date" name="startingdate" id="statingdate" /><br />
+          <label for="ticket">Tickets for Guests</label>
+          <input type="number" name="ticket" id="ticket" />
+        </fieldset>
+        <fieldset>
+          <legend>Submit Your Membership</legend>
+          <button class="btn btn--summit" type="submit">Register</button>
+          <button class="btn btn--reset" type="reset">Reset Fields</button>
+        </fieldset>
+      </form>
+      <aside class="main__left">
+        <h2 class="main__header">This season's guest speakers</h2>
+        <ul class="main__ul">
+          <li>
+            <p>October: <a href="../speakers/toobin.html">Jeffrey Toobin</a></p>
+          </li>
+          <li>
+            <p>
+              November: <a href="../speakers/sorkin.html">Andrew Ross Sorkin</a>
+            </p>
+          </li>
+          <li>
+            <p>January: <a href="../speakers/chua.html">Amy Chua</a></p>
+          </li>
+          <li>
+            <p>
+              February: <a href="../speakers/sampson.html">Scott Sampson</a>
+            </p>
+          </li>
+          <li>
+            <p>March: <a href="#">Carlos Eire</a></p>
+          </li>
+          <li>
+            <p>April: <a href="#">Ronan Tyran</a></p>
+          </li>
+        </ul>
+      </aside>
+    </main>
+    <footer class="footer">
+      <p class="footer footer__content">
+        &copy; 2012, San Joaquin Valley Town Hall, Fresno, CA 93755
+      </p>
+      <b class="chauho">ChauHo's exercise 3&rarr;4&rarr;5&rarr;6</b>
+    </footer>
+  </body>
+</html>
