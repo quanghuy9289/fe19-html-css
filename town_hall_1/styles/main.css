@@ -21,6 +21,13 @@ body {
     margin: 0 auto;
     border: 3px solid #931420;
     background-color: #fffded;
+    display: grid;
+    grid-template: repeat(4, auto) / auto 1fr;
+    grid-template-areas: 
+    "head head"
+    "navi navi"
+    "main main"
+    "foot foot";
 }
 
 a:hover,
@@ -38,6 +45,7 @@ a {
 
 /* Header */
 header {
+    grid-area: head;
     border-bottom: 3px solid #931420;
     padding: 1.5rem 0 2rem 0;
     background-image: linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
@@ -72,6 +80,7 @@ header h3 {
 }
 
 #nav_menu {
+    grid-area: navi;
     position: relative;
   }
 
@@ -79,9 +88,12 @@ header h3 {
     padding: 0;
     margin: 0;
     list-style-type: none;
-    display: flex;
+    /* display: flex;
     flex-basis: 100%;
-    justify-content: space-evenly;
+    justify-content: space-evenly; */
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    vertical-align: middle;
 }
 
 #nav_menu ul::after {
@@ -131,16 +143,22 @@ header h3 {
 
 main {
     /* clear: left; */
-    display: flex;
     padding-bottom: 15px;
+    display: grid;
+    /* display: flex; */
+    grid-area: main;
+    grid-template: auto / 30% 1fr;
+    column-gap: 2.5%;
 }
 
 main section {
     /* width: 60%;
     float: right; */
-    flex-basis: 70%;
-    order: 2;
+    /* flex-basis: 70%;
+    order: 2; */
     padding: 0 2.5% 20px;
+    grid-row: 1/2;
+    grid-column: 2/3;
 }
 
 main section h1 {
@@ -208,10 +226,12 @@ a:focus {
 main aside {
     /* width: 32.5%;
     float: right; */
-    padding-left: 2.5%;
+    padding-left: 5%;
     padding-bottom: 20px;
-    flex-basis: 30%;
-    order: 1;
+    /* flex-basis: 30%;
+    order: 1; */
+    grid-row: 1/2;
+    grid-column: 1/2;
 }
 
 main aside h2 {
@@ -235,6 +255,7 @@ footer {
     border-top: 3px solid #931420;
     color: white;
     /* clear: both; */
+    grid-area: foot;
 }
 
 footer p {
@@ -256,8 +277,23 @@ footer p {
   
   /* styles for mobile in landscape orientation */
   @media only screen and (max-width: 767px) {
+    body {
+        display: grid;
+        grid-template: repeat(4, auto) / 1fr;
+        grid-template-areas: 
+        "head"
+        "navi"
+        "main"
+        "foot";
+    }
     header {
-      text-align: center;
+        /* text-align: center; */
+        display: grid;
+        grid-template: repeat(3, auto) / 1fr;
+        gap: 0.5em;
+        justify-items: center;
+        padding-top: 1em;
+        padding-bottom: 1em;
     }
     header img {
       float: none;
@@ -267,26 +303,33 @@ footer p {
       display: none;
     }
     #mobile_menu {
-      display: block;
+      /* display: block; */
+      display: grid;
     }
     .slicknav_menu {
       background-color: #800000 !important;
     }
 
     main {
-        flex-direction: column;
+        /* flex-direction: column; */
+        grid-template: repeat(2, auto) / 1fr;
     }
   
     main section {
       /* float: none; */
       width: 95%;
-      order: 1;
+      /* order: 1; */
+      grid-row: 1/2;
+      grid-column: 1/2;
     }
     main aside {
       /* float: none; */
       padding-right: 2.5%;
       width: 95%;
-      order: 2;
+      /* order: 2; */
+      grid-row: 2/3;
+      grid-column: 1/2;
+      padding-left: 2.5%;
     }
     main aside div.speakers {
       column-count: 2;
