@@ -157,9 +157,17 @@ main .content-rghit .speaker .container {
     padding-bottom: 1em;
 }
 
-main .content-rghit .speaker .container img {
-    padding-left: 1.5em;
+.content-rghit .container figure {
     float: right;
+    margin: 0 0 1em 1em;
+    border-bottom: 1px solid #800000;
+}
+
+.container figure figcaption {
+    font-weight: bold;
+}
+
+main .content-rghit .container img {
     max-width: 100%;
 }
 
