@@ -23,14 +23,10 @@ header {
 	border-bottom: 3px solid #931420;
 	padding-top: 1.5em;
 	padding-bottom: 2em;
-	background-image: -moz-linear-gradient(
-	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
-	background-image: -webkit-linear-gradient(
-	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
-	background-image: -o-linear-gradient(
-	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
-	background-image: linear-gradient(
-	    30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -moz-linear-gradient(30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -webkit-linear-gradient(30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: -o-linear-gradient(30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
+	background-image: linear-gradient(30deg, #800000 0%, #fffded 30%, white 50%, #fffded 80%, #800000 100%);
 }
 
 header img {
