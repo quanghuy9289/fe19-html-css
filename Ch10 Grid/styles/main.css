@@ -1,0 +1,266 @@
+/* So the HTML5 structural tags work in older browsers */
+/*article, aside, figure, footer, header, nav, section {
+    display: block;
+}*/
+html {
+    background-color: #ffffff;
+}
+/* the styles for the elements */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 99%;
+    max-width: 960px;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+    box-sizing: border-box;
+    display: grid;
+    grid-template: 140px auto 1fr 40px / repeat(12, 1fr);
+}
+
+/* the styles for the header */
+header {
+    background-image: -moz-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -o-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    background-image: -webkit-linear-gradient(30deg, #f6bb73 0%, #f6bb73 30%, white 50%, #f6bb73 80%, #f6bb73 100%);
+    border-bottom: 3px solid #931420;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
+    grid-row: 1/2;
+    grid-column: 1 / span 12;
+}
+header img {
+	float: left;
+    padding-left: 3.75%;
+    padding-right: 3.75%;
+}
+header h2 {
+    /*font-size: 170%;*/
+    color: #800000;
+    top: 30px;
+}
+header h3 {
+    /*font-size: 130%;*/
+    font-style: italic;
+    top: 30px;
+}
+#shadow {
+    text-shadow: 2px 2px 4px #800000;
+}
+/* the styles for the nav */
+#nav_menu {
+    grid-row: 2/3;
+    grid-column: 1 / span 12;
+}
+#nav_menu ul {
+    display: grid;
+    grid-template: auto / repeat(5, 1fr);
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    position: relative;
+}
+#nav_menu ul li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background-color: #800000;
+    color: white;
+    font-weight: bold;
+}
+#nav_menu .current a {
+    color: yellow;
+}
+#nav_menu ul ul {
+    width: 20%;
+    display: none;
+    position: absolute;
+    top: 100%;
+    padding: 0;
+    margin: 0;
+}
+#nav_menu ul ul li {
+    clear: both;
+    position: relative;
+}
+#nav_menu ul li:hover > ul {
+    display: block;
+}
+#nav_menu > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+#mobile_menu {
+    display: none;
+    grid-row: 2/3;
+    grid-column: 1 / span 12;
+}
+/* the styles for main */
+main {
+    grid-row: 3/4;
+    grid-column: 1 / span 12;
+    display: grid;
+    grid-template: auto / repeat(12, 1fr);
+    align-items: start;
+}
+section {
+    grid-row: 1/2;
+    grid-column: 4 / span 9;
+}
+aside {
+    grid-row: 1/2;
+    grid-column: 1/4;
+    box-sizing: border-box;
+}
+/* the styles for the section and aside */
+section {
+    padding-right: 2.5%;
+    padding-left: 2.5%;
+    padding-bottom: 20px;
+}
+section > h3 {
+	clear: left;
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+section h1 {
+    font-size: 150%;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+.border {
+    border-top: 2px solid #800000;
+}
+section figure {
+    float: right;
+    margin-right: 0;
+}
+figcaption span {
+    border-bottom: 1px solid #800000;
+    font-weight: bold;
+}
+section img {
+    border: 1px solid black;
+    max-width: 40%;
+    min-width: 150px;
+}
+section p {
+    padding-bottom: .5em;
+    font-size: 110%;
+}
+section blockquote {
+    padding-right: 2em;
+    padding-left: 2em;
+}
+section ul {
+    padding-bottom: .25em;
+    padding-left: 1.25em;
+}
+section li {
+    padding-bottom: .35em;
+}
+a:hover, a:focus {
+    font-style: italic;
+}
+aside {
+    padding-left: 2.5%;
+    padding-bottom: 20px;
+}
+aside h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+aside img {
+    padding-bottom: 1em;
+}
+main h2 {
+    font-size: 130%;
+    color: #800000;
+    padding-top: .5em;
+    padding-bottom: .25em;
+}
+
+/* the styles for the footer */
+footer {
+    grid-row: 4/5;
+    grid-column: 1 / span 12;
+    background-color: #931420;
+    color: #ffffff;
+    text-align: center;
+}
+@media only screen and (max-width: 959px) {
+    section h1 {
+        font-size: 135%;
+    }
+    section h2, aside h2 {
+        font-size: 120%;
+    }
+}
+@media only screen and (max-width: 767px) {
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    body {
+        width: 100%;
+        grid-template: auto auto auto 40px / repeat (12, 1fr);
+    }
+    header img {
+        float: left;
+    }
+    header h2, header h3 {
+        text-align: center;
+    }
+    aside {
+        float: none;
+        width: 100%;
+    }
+    section img {
+        max-width: 30%;
+    }
+    footer p {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 479px) {
+    * {
+        font-size: 90%;
+    }
+    #nav_menu {
+        display: none;
+    }
+    #mobile_menu {
+        display: block;
+    }
+    .slicknav_menu {
+        background: #800000 !important;
+    }
+    header h2, header h3 {
+        font-size: 120%;
+    }
+    main {
+        grid-template: auto auto / auto;
+    }
+    section {
+        grid-row: 3/4;
+        grid-column: 1 / span 12;
+    }
+    aside {
+        grid-row: 4/5;
+        grid-column: 1 / span 12;
+    }
+    aside div {
+        -moz-column-count: 2;
+        -webkit-column-count: 2;
+        column-count: 2;
+    }
+}
