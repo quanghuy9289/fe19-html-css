@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bài Tập</title>
+    <link rel="shortcut icon" href="/Img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/Style.css/luncheons.css">
+    <script src="/Js/index.js"></script>
+    <link rel="stylesheet" href="/Style.css/slicknav.css">
+    <script src="https://code.jquery.com/jquery-
+					2.1.3.min.js"></script>
+    <script src="/Js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $('#nav-menu').slicknav({
+                prependTo: "#mobile-menu"
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <header class=" header-wrap" id="header">
+        <section class="logo">
+            <a href=""><img src="/Img/town_hall_logo.gif" alt="Logo" height="80px"></a>
+        </section>
+        <section class="row">
+            <h2>San Joaquin Valley Town Hall</h2>
+            <h3>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h3>
+        </section>
+    </header>
+
+    <nav id="mobile-menu"></nav>
+    <nav class="nav-menu" id="nav-menu">
+        <ul>
+            <li class="current"><a href="index.html">Home</a></li>
+            <li><a href="/Speaker/sampson.html">Speaker</a></li>
+            <li><a href="luncheons.html">Luncheons</a></li>
+            <li><a href="">Ticket</a></li>
+            <li><a href="">About Us</a>
+                <ul>
+                    <li><a href="">Our History</a></li>
+                    <li><a href="">Board of Directors</a></li>
+                    <li><a href="">Past Speakers</a></li>
+                    <li><a href="">Contact Information</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <main class="main-content" id="main">
+        <section class="content-rghit">
+            <article>
+                <h1>About Our Luncheons</h1>
+                <p>Make reservations for lunch in the lower lobby of the William Saroyan Theater after each lecture. These informal sessions provide an excellent opportunity to talk with the speaker.</p>
+            </article>
+            <article>
+                <h2>Season luncheon tickets: $120</h2>
+                <p>These tickets can be ordered at the same time as the season lecture ticket.</p>
+            </article>
+            <article>
+                <h2>Individual luncheon tickets: $25</h2>
+                <p>A limited number of these tickets are available and can be purchased by calling 559.555.1212. These tickets must be purchased by the Friday prior to the lecture.</p>
+            </article>
+
+            <article>
+                <figure>
+                    <figcaption>
+                        <h2>The luncheon schedule</h2>
+                    </figcaption>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Year</th>
+                                <th>Date</th>
+                                <th>Speaker</th>
+                                <th>Cost</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="2">2011</td>
+                                <td>October 19</td>
+                                <td>Jeffrey Toobin</td>
+                                <td class="right">$25</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>November 16</td>
+                                <td>Andress Ross Sorkin</td>
+                                <td class="right">$25</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="4">2012</td>
+                                <td>January 18</td>
+                                <td>Amy Chua</td>
+                                <td class="right">$25</td>
+                            </tr>
+                            <tr>
+                                <td>February 16</td>
+                                <td>Scott Sampson</td>
+                                <td class="right">$25</td>
+                            </tr>
+                            <tr>
+                                <td>March 21</td>
+                                <td>Carlos Eire</td>
+                                <td class="right">$25</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <td>April 18</td>
+                                <td>Ronan Tynan</td>
+                                <td class="right">$25</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" class="right">Cost of 6 individual luncheon tickets</th>
+                                <td>$150</td>
+                            </tr>
+                            <tr class="border_bottom">
+                                <th colspan="3" class="right">Cost of a season luncheon ticket</th>
+                                <td>$120</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <tr>
+                                <th colspan="3">Savings</th>
+                                <td>$30</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+                </figure>
+            </article>
+        </section>
+
+        <aside class="content-left">
+            <h2>Guest speakers</h2>
+            <h3>October<br><a href="/Speaker/toobin.html">Jeffrey Toobin</a></h3>
+            <a href="/Speaker/toobin.html"><img src="/Img/toobin75.jpg" alt="Toobin"></a>
+
+            <h3>November<br><a href="/Speaker/sorkin.html">Andrew Ross Sorkin</a></h3>
+            <a href="/Speaker/sorkin.html"><img src="/Img/sorkin75.jpg" alt="Sorkin"></a>
+
+            <h3>January<br><a href="/Speaker/amy.html">Amy Chua</a></h3>
+            <a href="/Speaker/amy.html"><img src="/Img/chua75.jpg" alt="Amy Chua"></a>
+
+            <h3>February<br><a href="/Speaker/sampson.html">Scott Sampson</a></h3>
+            <a href="/Speaker/sampson.html"><img src="/Img/sampson75.jpg" alt="Scott Sampson"></a>
+        </aside>
+    </main>
+
+    <footer class="footer-wrap" id="footer">
+        <p>&copy; 2018, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+    </footer>
+</body>
+
+</html>

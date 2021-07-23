@@ -1,0 +1,267 @@
+/* So the HTML5 structural tags work in older browsers */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+nav,
+section {
+    display: block;
+}
+
+html {
+    background-color: #fff;
+}
+
+
+/* the styles for the elements */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+    width: 99%;
+    max-width: 960px;
+    margin: 0 auto;
+    border: 3px solid #931420;
+    background-color: #fffded;
+}
+
+
+/* the styles for the header */
+
+header {
+    display: flex;
+    align-items: center;
+    border-bottom: 3px solid #931420;
+    padding: 2em;
+    background-image: linear-gradient(30deg, #f6bb73 0%, #fff 50%, #f6bb73 100%);
+}
+
+header .row {
+    margin-left: 1.875em;
+}
+
+header .row h2 {
+    font-size: 170%;
+    color: #800000;
+}
+
+header .row h3 {
+    font-size: 130%;
+    font-style: italic;
+}
+
+header .row h3 span {
+    text-shadow: 1px 1px 1px #800000;
+}
+
+
+/* the styles for the navigation */
+
+#mobile-menu {
+    display: none;
+}
+
+.nav-menu ul {
+    background-color: #800000;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+}
+
+.nav-menu ul li {
+    list-style-type: none;
+    width: 20%;
+    text-align: center;
+}
+
+.nav-menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.875em 1.25em;
+    display: block;
+}
+
+.nav-menu ul li a:hover {
+    background-color: #57070f;
+    transition: 0.4s;
+}
+
+.nav-menu ul li:hover>ul {
+    display: block;
+    transition: 0.4s;
+}
+
+.nav-menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 20%;
+}
+
+.nav-menu ul ul li {
+    width: 100%;
+}
+
+.nav-menu ul ul li a {
+    padding: 0.875em 0.5em;
+}
+
+.nav-menu ul .current a {
+    color: yellow;
+}
+
+
+/* the styles for the section */
+
+main {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    clear: both;
+}
+
+main .content-left {
+    width: 30%;
+    padding: 0 0 1.25em 1.25em;
+}
+
+main .content-rghit {
+    width: 65%;
+    padding: 0 1.25em 1.25em 1.25em;
+}
+
+main h1 {
+    font-size: 150%;
+    padding: .3em 0em;
+}
+
+main h2 {
+    font-size: 130%;
+    color: #800000;
+    padding: .5em 0em .25em 0em;
+}
+
+main h3 {
+    font-size: 105%;
+    padding-bottom: .25em;
+}
+
+main img {
+    padding-bottom: 1em;
+}
+
+main p {
+    padding-bottom: .5em;
+}
+
+main blockquote {
+    padding: 0em 2em;
+}
+
+main ul {
+    padding: 0em 0em .25em 1.25em;
+}
+
+main li {
+    padding-bottom: .35em;
+}
+
+
+/* the styles for the table */
+
+table {
+    border-collapse: collapse;
+}
+
+thead,
+tfoot {
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+
+th,
+td {
+    padding: .3em .8em;
+    text-align: left;
+}
+
+tfoot th,
+tfoot td {
+    text-align: right;
+    font-weight: bold;
+}
+
+.border_bottom {
+    border-bottom: 2px solid #800000;
+}
+
+.right {
+    text-align: right;
+}
+
+
+/* the styles for the footer */
+
+footer {
+    background-color: #931420;
+    padding: 0 2em;
+}
+
+footer p {
+    text-align: center;
+    color: #fff;
+    padding: 1em 0em;
+}
+
+
+/* the styles for the tablet */
+
+@media screen and (max-width: 768px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5em;
+    }
+    header .row {
+        margin: 0;
+    }
+    header .row h2,
+    header .row h3 {
+        text-align: center;
+    }
+    #mobile-menu {
+        display: block;
+    }
+    #nav-menu {
+        display: none;
+    }
+}
+
+
+/* the styles for the mobile */
+
+@media screen and (max-width: 612px) {
+    main {
+        display: flex;
+        flex-direction: column;
+        padding: 0 1em;
+    }
+    main .content-left {
+        width: 100%;
+        padding: 0;
+    }
+    main .content-rghit {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+
+/*# sourceMappingURL=style.css.map */
