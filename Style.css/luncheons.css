@@ -176,6 +176,10 @@ main li {
 
 /* the styles for the table */
 
+figure {
+    margin-bottom: 1em;
+}
+
 table {
     border-collapse: collapse;
 }
@@ -198,11 +202,12 @@ tfoot td {
     font-weight: bold;
 }
 
-.border_bottom {
+tbody tr:nth-child(4n+2) {
     border-bottom: 2px solid #800000;
 }
 
-.right {
+tbody td:nth-last-child(1),
+tbody th:nth-child(1) {
     text-align: right;
 }
 

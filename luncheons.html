@@ -74,58 +74,58 @@
                     <table>
                         <thead>
                             <tr>
-                                <th>Year</th>
-                                <th>Date</th>
-                                <th>Speaker</th>
-                                <th>Cost</th>
+                                <th id="hdr-year" scope="col">Year</th>
+                                <th id="hdr-date" scope="col">Date</th>
+                                <th id="hdr-speaker" scope="col">Speaker</th>
+                                <th id="hdr-cost" scope="col">Cost</th>
                             </tr>
                         </thead>
                         <tbody>
                             <tr>
-                                <td rowspan="2">2011</td>
-                                <td>October 19</td>
-                                <td>Jeffrey Toobin</td>
-                                <td class="right">$25</td>
-                            </tr>
-                            <tr class="border_bottom">
-                                <td>November 16</td>
-                                <td>Andress Ross Sorkin</td>
-                                <td class="right">$25</td>
+                                <td rowspan="2" headers="hdr-year">2011</td>
+                                <td headers="hdr-date">October 19</td>
+                                <td headers="hdr-speaker">Jeffrey Toobin</td>
+                                <td headers="cost">$25</td>
                             </tr>
                             <tr>
-                                <td rowspan="4">2012</td>
-                                <td>January 18</td>
-                                <td>Amy Chua</td>
-                                <td class="right">$25</td>
+                                <td headers="hdr-date">November 16</td>
+                                <td headers="hdr-speaker">Andress Ross Sorkin</td>
+                                <td headers="cost">$25</td>
                             </tr>
                             <tr>
-                                <td>February 16</td>
-                                <td>Scott Sampson</td>
-                                <td class="right">$25</td>
+                                <td rowspan="4" headers="hdr-year">2012</td>
+                                <td headers="hdr-date">January 18</td>
+                                <td headers="hdr-speaker">Amy Chua</td>
+                                <td headers="cost">$25</td>
                             </tr>
                             <tr>
-                                <td>March 21</td>
-                                <td>Carlos Eire</td>
-                                <td class="right">$25</td>
-                            </tr>
-                            <tr class="border_bottom">
-                                <td>April 18</td>
-                                <td>Ronan Tynan</td>
-                                <td class="right">$25</td>
+                                <td headers="hdr-date">February 16</td>
+                                <td headers="hdr-speaker">Scott Sampson</td>
+                                <td headers="cost">$25</td>
                             </tr>
                             <tr>
-                                <th colspan="3" class="right">Cost of 6 individual luncheon tickets</th>
-                                <td>$150</td>
+                                <td headers="hdr-date">March 21</td>
+                                <td headers="hdr-speaker">Carlos Eire</td>
+                                <td headers="cost">$25</td>
                             </tr>
-                            <tr class="border_bottom">
-                                <th colspan="3" class="right">Cost of a season luncheon ticket</th>
-                                <td>$120</td>
+                            <tr>
+                                <td headers="hdr-date">April 18</td>
+                                <td headers="hdr-speaker">Ronan Tynan</td>
+                                <td headers="cost">$25</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" id="hdr-individual" scope="row">Cost of 6 individual luncheon tickets</th>
+                                <td headers="hdr-individual cost">$150</td>
+                            </tr>
+                            <tr>
+                                <th colspan="3" id="hdr-season" scope="row">Cost of a season luncheon ticket</th>
+                                <td headers="hdr-season cost">$120</td>
                             </tr>
                         </tbody>
                         <tfoot>
                             <tr>
-                                <th colspan="3">Savings</th>
-                                <td>$30</td>
+                                <th colspan="3" id="hdr-savings" scope="row">Savings</th>
+                                <td headers="hdr-savings cost">$30</td>
                             </tr>
                         </tfoot>
                     </table>
