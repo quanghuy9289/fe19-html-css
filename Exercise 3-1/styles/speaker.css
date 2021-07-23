@@ -66,6 +66,7 @@ body {
 }
 #nav-menu a {
   color: white;
+  height: 2em;
 }
 #nav-menu ul {
   display: flex;
