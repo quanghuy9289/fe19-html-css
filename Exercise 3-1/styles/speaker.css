@@ -23,6 +23,7 @@ body {
   border: 5px solid #931420;
   background-color: #fffded;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* the styles for the header */
@@ -155,11 +156,17 @@ article {
   border-top: 2px solid #800000;
   border-bottom: 2px solid #800000;
 }
-article img {
+figure {
   float: right;
   margin: 0.5em 0.5em 0.5em 0;
-  border: 1px solid black;
+}
+figure img {
   border-radius: 3px;
+  border: 1px solid black;
+}
+figcaption {
+  display: block;
+  border-bottom: 1px solid #800000;
 }
 article h2 {
   padding-top: 0;

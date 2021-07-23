@@ -19,10 +19,11 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 87.5%;
-  max-width: 57vw;
+  max-width: 80vw;
   border: 5px solid #931420;
   background-color: #fffded;
   margin: 0 auto;
+  line-height: 1.6;
 }
 
 /* the styles for the header */
@@ -65,6 +66,7 @@ body {
 }
 #nav-menu a {
   color: white;
+  height: 1.7em;
 }
 #nav-menu ul {
   display: flex;
@@ -133,6 +135,7 @@ body {
 }
 .main__left {
   flex: 0 0 35%;
+  display: inline-block;
   margin: 0.2em 0.4em;
 }
 .btn {
