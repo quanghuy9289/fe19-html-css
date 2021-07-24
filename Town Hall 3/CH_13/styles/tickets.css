@@ -175,8 +175,14 @@ fieldset br {
   width: 5em;
 }
 
+#buttons {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+}
+
 #buttons input {
-  width: 10em;
+  width: 30%;
 }
 
 /* the styles for the footer */
@@ -303,7 +309,13 @@ footer p {
   body {
     font-size: 90%;
   }
-  #buttons input {
-    width: 7em;
+
+  label {
+    width: 7.5em;
+    font-size: 0.8em;
+  }
+  input,
+  select {
+    width: 50%;
   }
 }
