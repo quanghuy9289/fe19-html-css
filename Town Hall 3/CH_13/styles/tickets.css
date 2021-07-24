@@ -178,11 +178,11 @@ fieldset br {
 #buttons {
   box-sizing: border-box;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 
 #buttons input {
-  width: 30%;
+  width: 25%;
 }
 
 /* the styles for the footer */
