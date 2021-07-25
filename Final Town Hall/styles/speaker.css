@@ -69,7 +69,7 @@ article figcaption {
     order: 2;
   }
   footer {
-    grid-area: 4 / 1 / span 4 / 2;
+    grid-area: 4 / 1 / 5 / 2;
   }
 
   header img {
