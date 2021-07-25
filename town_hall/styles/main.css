@@ -139,8 +139,7 @@ header h3 {
     text-align: center;
 }
 
-/* Main */
-
+/* Section */
 main {
     /* clear: left; */
     padding-bottom: 15px;
@@ -183,7 +182,6 @@ main section article {
     padding: 0.5em 0;
     border-top: 2px solid #800000;
     border-bottom: 2px solid #800000;
-
 }
 
 main section article img {
@@ -275,8 +273,8 @@ footer p {
     }
 }
   
-  /* styles for mobile in landscape orientation */
-  @media only screen and (max-width: 767px) {
+/* styles for mobile in landscape orientation */
+@media only screen and (max-width: 767px) {
     body {
         display: grid;
         grid-template: repeat(4, auto) / 1fr;

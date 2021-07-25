@@ -1,0 +1,64 @@
+/* Tickets Form */
+main section form fieldset {
+    padding: 0.5em 1em;
+    margin-bottom: 0.5em;
+    border: 2px solid silver;
+    border-radius: 5px;
+}
+
+main section form legend {
+    color: black;
+    font-size: 90%;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+}
+
+main section form label {
+    float: left;
+    text-align: right;
+    width: 10em;
+}
+main section form label.non-float {
+    float: none;
+    width: auto;
+    vertical-align: middle;
+}
+
+main section form input:required {
+    border: 2px solid #800000;
+}
+
+main section form input,
+main section form select {
+    width: 12em;
+    margin: 0 0 0.5em 0.5em;
+    vertical-align: middle;
+}
+
+main section form input.payment-radio {
+    width: auto;
+    margin: 0 0.5em 0 3em;
+    vertical-align: middle;
+}
+
+main section form input.button {
+    width: 7em;
+}
+
+main section form input[type="submit"] {
+    margin-left: 10em;
+}
+
+main section form input:valid {
+    border: 1px solid black;
+}
+main section form input:invalid {
+    border: 2px solid #800000;
+}
+
+
+@media only screen and (max-width: 767px) {
+    main section form input[type="submit"] {
+        margin-left: 3em;
+    }
+}
