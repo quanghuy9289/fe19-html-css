@@ -140,6 +140,7 @@ main .content-rghit {
 main h1 {
     font-size: 150%;
     padding: .3em 0em;
+    color: #800000;
 }
 
 main h2 {
@@ -170,42 +171,73 @@ main li {
 }
 
 
-/* the styles for the table */
+/* the styles for the form */
 
-figure {
-    margin-bottom: 1em;
+fieldset {
+    margin: .5em 0;
 }
 
-table {
-    border-collapse: collapse;
-    white-space: nowrap;
+legend {
+    margin-left: 1em;
 }
 
-thead,
-tfoot {
-    border-top: 2px solid #800000;
-    border-bottom: 2px solid #800000;
+form {
+    padding: 1em;
 }
 
-th,
-td {
-    padding: .3em .8em;
+form label {
+    padding: .5em .5em .5em 0;
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+}
+
+form input {
+    border: 2px solid #800000;
+    width: 40%;
+}
+
+form input[type=tel],
+input[id=number_of_tickets],
+input[name=address],
+input[type=date] {
+    border: 1px solid #000;
+}
+
+form select {
+    width: 40%;
+}
+
+form input[type=radio] {
+    margin-left: 2em;
+}
+
+.payment input {
+    width: 5%;
+}
+
+.payment label {
+    width: 20%;
     text-align: left;
 }
 
-tfoot th,
-tfoot td {
-    text-align: right;
+.submit form {
+    text-align: center;
+}
+
+.submit form input {
+    width: 30%;
+    border: 1px solid black;
+    border-radius: .5em;
+    padding: .7em;
+    background-color: #800000;
+    color: #fff;
     font-weight: bold;
 }
 
-tbody tr:nth-child(4n+2) {
-    border-bottom: 2px solid #800000;
-}
-
-tbody td:nth-last-child(1),
-tbody th:nth-child(1) {
-    text-align: right;
+.submit form input:hover {
+    background-color: #931420;
+    color: yellow;
 }
 
 
@@ -262,6 +294,14 @@ footer p {
     main .content-rghit {
         width: 100%;
         padding: 0;
+    }
+    .submit form {
+        display: flex;
+        flex-direction: column;
+    }
+    .submit form input {
+        width: 40%;
+        margin: .5em auto;
     }
 }
 
