@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/baitap.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.gif" alt="photo">
+        <h2>San Joaquin Valley Town Hall</h2>
+        <h3>Celebrating our 75<sup>th</sup> Year</h3>
+    </header>
+    <nav id="nav_menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Speakers</a></li>
+            <li><a href="#">Luncheons</a></li>
+            <li><a href="#">Tickets</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside>
+            <h2>Guest speakers</h2>
+            <h3>October</h3>
+            <a href="./speakers/toobin.html">Jeffrey Toobin</a><br>
+            <img src="./images/toobin75.jpg" alt="photo">
+            <h3>November</h3>
+            <a href="#">Jeffrey Toobin</a><br>
+            <img src="./images/sorkin75.jpg" alt="photo">
+            <h3>January</h3>
+            <a href="#">Amy Chua</a><br>
+            <img src="./images/chua75.jpg" alt="photo">
+            <h3>February</h3>
+            <a href="#">Scott Sampson</a><br>
+            <img src="./images/sampson75.jpg" alt="photo">
+
+        </aside>
+        <article>
+            <h2>Order Form</h2>
+            <form action="">
+                <fieldset>
+                    <legend>Member Information</legend>
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required> <br>
+                    <label for="first_name">First name</label>
+                    <input type="First-name" id="first_name" required> <br>
+                    <label for="last_name">Last name</label>
+                    <input type="last-name" id="last_name" required> <br>
+                    <label for="address">Address</label>
+                    <input type="address" id="address" required> <br>
+
+                    <label for="city">City</label>
+                    <input type="city" id="city" required> <br>
+                    <label for="state">State</label>
+                    <input type="state" id="state" placeholder="2 character code" required> <br>
+                    <label for="ZIP_code">Zip code</label>
+                    <input type="zip code" id="ZIP_code" placeholder="3 or 9 digit" required> <br>
+                    <label for="phone_number">Phone number</label>
+                    <input type="phone number" id="phone_number" placeholder="999-999-9999" required> <br>
+
+
+
+
+                </fieldset>
+                <fieldset>
+                    <legend>Ordering Information</legend>
+                    <label for="order_type">Order type</label>
+                    <select name="" id="order_type" required>
+                        <option value="member">Member Package</option>
+                        <option value="customer">Donor Package</option>
+                        <option value="client">Single tickets</option>
+                    </select> <br>
+                    <label for="number_of_ticket">Number of ticket</label>
+                    <input type="numer of ticket" id="number_of_ticket" placeholder="number of single tickets" required>
+                </fieldset>
+                <fieldset id="payment">
+                    <legend>Payment method</legend>
+                    <input class="radio" type="radio" name="payment" value="bill me" id="bill_me" required>
+                    <label for="bill_me">Bill me</label>
+                    <input class="radio" type="radio" name="payment" id="credit_card" value="credit card" required>
+                    <label for="credit_card">Credit card</label>
+
+                    <br>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Credit card Information</legend>
+                    <label for="card_type">Card type</label>
+                    <select name="" id="card_type" required>
+                        <option value="visa">Visa</option>
+                        <option value="Master_card">Master Card</option>
+                        <option value="Discover">Discover</option>
+                    </select> <br>
+                    <label for="card_number">Card number</label>
+                    <input type="card number" id="card_number" placeholder="16 digits" required pattern="\d{16}"> <br>
+                    <label for="date" id="date">Expriration date:</label>
+                    <select name="month" id="exp_month" required>
+                        <option value="January">January</option>
+                        <option value="February">February</option>
+                    </select>
+                    <label for="year" id="year"></label>
+                    <select name="year" id="year" required>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                    </select>
+
+                </fieldset>
+                <fieldset>
+                    <legend>Submit Your Order</legend>
+                    <input class="button" type="submit" value="Submit" required>
+                    <input type="reset" value="Reset Field" required>
+
+                </fieldset>
+            </form>
+
+        </article>
+    </main>
+    <footer>
+        <p>
+        <p>&copy; 2012, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+        </p>
+
+    </footer>
+
+</body>
+
+</html>
