@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 800px;
+    margin: 20px auto; 
+    border: 2px solid #800000;
+    display: grid;
+    grid-template: auto auto auto auto / auto;
+}
+/* header */
+header{
+    grid-row: 1/2;
+    grid-column: 1/2;
+
+}
+header img{
+    float: left;
+    padding: 10px 10px;
+}
+header h2{
+    font-size: 200%;
+    color: orangered;
+    text-indent: 30px;
+    padding-top: 10px;
+}
+header h3{
+    font-size: 120%;
+    color: green;
+    text-indent: 30px;
+    font-style: italic;
+}
+/* nav_menu */
+#nav_menu{
+    grid-row:2/3 ;
+    grid-column: 1/ span 1;
+}
+#nav_menu ul{
+    background-color: #800000;
+    list-style: none;
+    position: relative;
+    display: grid;
+    grid-template: auto/ repeat(5, 1fr); 
+    height: 30px;
+    
+}
+#nav_menu ul li{
+    text-decoration: none;
+    padding-top: 5px;
+    
+}
+#nav_menu ul li a{
+    color: white;
+    padding-left: 50px;
+    text-decoration: none;
+}
+#nav_menu ul li a:hover{
+    color: blue;
+}
+/* main */
+main{
+    grid-row: 3/4;
+    grid-column: 1/ span 1;
+    display: grid;
+    grid-template: auto/ 200px 550px;
+}
+/* article */
+article {
+    grid-row: 1/ span 1;
+    grid-column: 2/3;
+    padding: 20px 20px;
+}
+/* form */
+form label{
+    /* float: left; */
+    /* text-align: right; */
+    margin: 5px 0;
+    width: 12em;
+    float: left;
+    text-align: right;
+}
+form input,
+form select{
+    /* float: right; */
+    margin: 5px 5px;
+    vertical-align: middle;
+    width: 10em;
+
+}
+form input.radio{
+    text-align: right;
+}
+form input.button{
+    margin-left: 100px;
+}
+form input.radio {
+    text-align: left;
+}
+form legend{ 
+    color: black;
+    font-weight: bold;
+    font-size: 120%;
+}
+form input[required]{
+    border: 2px solid #800000
+}
+form input :invalid{
+    border: 2px solid #800000
+}
+form input :valid{ 
+    border: 1px solid black;
+}
+#payment label{
+    float: none;
+    margin-left: 0px;
+    
+}
+#payment input{
+    width: auto;
+    margin-left: 90px;
+}
+
+/* aside */
+aside{
+    grid-row: 1/span 1;
+    grid-column: 1/2;
+    padding: 20px 20px;
+}
+/* footer*/
+footer{
+    text-align: center;
+    background-color: #800000;
+    padding: 20px 20px;
+    
+}
+footer p{
+    color: white;
+}
