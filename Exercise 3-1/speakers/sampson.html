@@ -2,10 +2,19 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>San Joaquin Valley Town Hall</title>
     <link rel="shortcut icon" href="../images/favicon.ico" />
     <link rel="stylesheet" href="../styles/speaker.css" />
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <link rel="stylesheet" href="../styles/slicknav.css" />
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.slicknav.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#nav-menu").slicknav({ prependTo: "#mobile-menu" });
+      });
+    </script>
   </head>
 
   <body>
@@ -17,6 +26,7 @@
         Celebrating our 75<sup>th</sup> Year
       </h3>
     </header>
+    <nav id="mobile-menu"></nav>
     <nav id="nav-menu">
       <ul>
         <li><a class="nav__current" href="../index.html">Home</a></li>
@@ -30,7 +40,7 @@
               <a href="#">Scott Sampson</a>
               <ul>
                 <li><a href="#">September 2010</a></li>
-                <li><a href="./speakers/sampson.html">February 2015</a></li>
+                <li><a href="#">February 2015</a></li>
               </ul>
             </li>
           </ul>
@@ -50,7 +60,9 @@
     </nav>
     <main class="main">
       <section class="section__right">
-        <h1 class="section__heading">Fossil Threads in the Web of Life</h1>
+        <h1 class="section__heading heading">
+          Fossil Threads in the Web of Life
+        </h1>
         <article>
           <figure>
             <img src="../images/sampson_dinosaur.jpg" alt="Sampson dinosaur" />
@@ -89,7 +101,7 @@
           date.
         </article>
       </section>
-      <aside class="aside__right">
+      <aside class="aside__left">
         <h2 class="main__heading--1">Guest speaker</h2>
 
         <div class="main__heading--3-content">
