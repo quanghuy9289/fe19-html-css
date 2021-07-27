@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="shortcut icon" href="images/favicon.ico">
+        <title>San Joaquin Valley Town Hall</title>
+        <link rel="stylesheet" href="styles/main.css">
+        <link rel="stylesheet" href="styles/tables.css">
+        <link rel="stylesheet" href="styles/slicknav.css">
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function() {
+                $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    <body>
+        <header>
+            <img src="images/town_hall_logo.gif" alt="Town Hall Logo" height="80">
+            <h2>San Joaquin Valley Town Hall</h2>
+		    <h3>Celebrating our <em id="shadow">75<sup>th</sup></em> Year</h3>
+        </header>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+            <ul>
+                <li class="current"><a href="index.html">Home</a></li>
+                <li><a href="">Speakers</a></li>
+                <li><a href="luncheons.html">Luncheons</a></li>
+                <li><a href="tickets.html">Tickets</a></li>
+                <li><a href="">About Us</a>
+                    <ul>
+                        <li><a href="">Our History</a></li>
+                        <li><a href="">Board of Directors</a></li>
+                        <li><a href="">Past Speakers</a></li>
+                        <li><a href="">Contact Information</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <main>
+            <aside>
+		        <h2>Guests Speakers</h2>
+                <div>
+                <h3>October 19, 2011<br>
+                <a href="speakers/toobin.html"> Jeffrey Toobin</a></h3>
+                <img src="images/toobin75.jpg" alt="Toobin" width="75">
+                <h3>November 16, 2011<br>
+                <a href="speakers/sorkin.html">Andrew Ross Sorkin</a></h3>
+                <img src="images/sorkin75.jpg" alt="Sorkin" width="75">
+                <h3>January 18, 2012<br>
+                <a href="speakers/chua.html">Amy Chua</a></h3>
+                <img src="images/chua75.jpg" alt="Chua" width="75">
+                <h3>February<br>
+                <a href="speakers/sampson.html">Scott Sampson</a></h3>
+                <img src="images/sampson75.jpg" alt="Sampson" width="75">
+                </div>
+            </aside>
+            <section>
+                <h1>About Our Luncheons</h1>
+                <p>Make reservations for lunch in the lower lobby of the William Saroyan Theater after each lecture. These informal sessions provide an excellent opportunity to talk with the speaker.</p>
+                <h2>Season luncheon tickets: $120</h2>
+                <p>These tickets can be ordered at the same time as the season lecture ticket.</p>
+                <h2>Individual luncheon tickets: $25</h2>
+                <p>A limited number of these tickets are available and can be purchased by calling 559.555.1212. These tickets must be purchased by the Friday prior to the lecture.</p>
+                <h2>The luncheon schedule</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th class="center">Year</th>
+                            <th class="left">Date</th>
+                            <th class="left">Speaker</th>
+                            <th class="right">Cost</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td rowspan="2" class="center">2015</td>
+                            <td class="left">October</td>
+                            <td class="left">Jeffrey Toobin</td>
+                            <td class="right">$25</td>
+                        </tr>
+                        <tr>
+                            <td class="left">November 16</td>
+                            <td class="left">Andress Ross Sorkin</td>
+                            <td class="right">$25</td>
+                        </tr>
+                        <tr>
+                            <td rowspan="4" class="center">2016</td>
+                            <td class="left">January 18</td>
+                            <td class="left">Amy Chua</td>
+                            <td class="right">$25</td>
+                        </tr>
+                        <tr>
+                            <td class="left">February 16</td>
+                            <td class="left">Scott Sampson</td>
+                            <td class="right">$25</td>
+                        </tr>
+                        <tr>
+                            <td class="left">March 21</td>
+                            <td class="left">Carlos Eire</td>
+                            <td class="right">$25</td>
+                        </tr>
+                        <tr>
+                            <td class="left">April 18</td>
+                            <td class="left">Ronan Tynan</td>
+                            <td class="right">$25</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <th colspan="3" class="right">Cost of 6 individual luncheon tickets</th>
+                            <td class="right">$150</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="right">Cost of a season luncheon ticket</th>
+                            <td class="right">$120</td>
+                        </tr>
+                        <tr>
+                            <th colspan="3" class="right">Savings</th>
+                            <th class="right">$30</th>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2012, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+        </footer>
+    </body>
+</html>

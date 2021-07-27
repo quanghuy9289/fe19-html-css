@@ -1,0 +1,54 @@
+nav .current a {
+    color: white !important;
+}
+fieldset {
+    margin: 5px;
+}
+label {
+    width: 30%;
+    float: left;
+    clear: left;
+    text-align: right;
+    margin: 6px 0px;
+}
+input , select {
+    margin: 5px;
+}
+select {
+    width: 177px;
+}
+.checkbox {
+    float: none;
+}
+#billme , #creditcard {
+    margin-left: 10%;
+}
+#exdate {
+    width: 172px;
+}
+button {
+    width: 110px;
+}
+#submit {
+    margin-left: 31%;
+    margin-right: 6px;
+}
+@media only screen and (max-width: 767px) {
+    button {
+        width: 92px;
+    }
+}
+@media only screen and (max-width: 479px) {
+    label {
+        margin: 8px 0px 6px 0px;
+    }
+    select {
+        width: 104px;
+    }
+    #exdate {
+        width: 99px;
+    }
+    button {
+        width: 60px;
+    }
+}

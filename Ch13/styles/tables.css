@@ -1,0 +1,27 @@
+#nav_menu .current a {
+    color: white;
+}
+table {
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+    border-collapse: collapse;
+}
+tbody {
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+tbody tr:nth-child(3) , tfoot tr:nth-child(3) {
+    border-top: 2px solid #800000;
+}
+table th, table td {
+    padding: 5px;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: right;
+}
+.center {
+    text-align: center;
+}
