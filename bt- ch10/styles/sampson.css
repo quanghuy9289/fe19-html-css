@@ -9,8 +9,7 @@ html {
 body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 100%;
-  width: 98%;
-  max-width: 960px;
+  width: 800px;
   margin: 0 auto;
   border: 3px solid #931420;
   background-color: #fffded;
@@ -26,18 +25,16 @@ p {
 }
 
 h1 {
+  font-size: 150%;
   padding-top: 0.5em;
   padding-bottom: 0.25em;
   margin: 0;
-  font-size: 130%;
-  padding: 0.5em 0 0.25em;
   background-image: linear-gradient(to right bottom, #fc0909ea, #e6b207);
   display: inline-block;
   color: transparent;
   -webkit-background-clip: text;
   background-clip: text;
 }
-
 
 /* the styles for the header */
 header {
@@ -52,8 +49,8 @@ header {
 
 header img {
   float: left;
-  padding-right: 3.75%;
-  padding-left: 3.75%;
+  padding-right: 30px;
+  padding-left: 30px;
   padding-bottom: 0.5em;
 }
 
@@ -72,28 +69,23 @@ header h3 {
 }
 
 /* the styles for the nav */
-#mobile_menu {
-  display: none;
-}
-
 #nav_menu {
   position: relative;
 }
 
 #nav_menu ul {
   list-style-type: none;
-  display: flex;
-  flex-basis: 100%;
-  justify-content: space-evenly;
 }
 
 #nav_menu ul::after {
   content: " ";
+  clear: both;
   display: block;
 }
 
 #nav_menu ul li {
-  flex-basis: 20%;
+  float: left;
+  width: 20%;
   position: relative;
 }
 
@@ -111,11 +103,6 @@ header h3 {
   color: yellow;
 }
 
-#nav_menu li:hover a {
-  color: yellow;
-  
-}
-
 #nav_menu ul li ul {
   display: none;
   width: 100%;
@@ -125,37 +112,35 @@ header h3 {
 
 #nav_menu ul li:hover ul {
   display: block;
-  color: yellow;
-  background-color: #800000;
 }
 
 #nav_menu ul li ul li {
+  float: none;
   width: 100%;
 }
 
 /* the styles for the section */
 main {
+  clear: left;
   padding-bottom: 15px;
-  display: flex;
-  flex-wrap: wrap;
 }
 
 main section {
-  padding: 0 2.5% 20px;
-  flex-basis: 70%;
-  order: 2;
+  width: 525px;
+  float: right;
+  padding: 0 20px 20px;
 }
 
 main section h1 {
-  font-size: 150%;
-  padding-top: 0.5em;
-  padding-bottom: 0.25em;
-  margin: 0;
-}
-
-main section h2 {
-  font-size: 130%;
   color: #800000;
+  background-image: linear-gradient(to right bottom, #fc0909ea, #e6b207);
+  display: inline-block;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+}
+main section h2 {
+  font-size: 105%;
   padding: 0.5em 0 0.25em;
   background-image: linear-gradient(to right bottom, #fc0909ea, #e6b207);
   display: inline-block;
@@ -171,16 +156,15 @@ main section h3 {
 
 main section article {
   padding: 0.5em 0;
-  border-top: 2px solid #800000;
-  border-bottom: 2px solid #800000;
+  -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2;
 }
 
 main section article img {
   float: right;
   margin: 1em 0 1em 1em;
   border: 1px solid black;
-  max-width: 40%;
-  min-width: 150px;
 }
 
 main section article h2 {
@@ -192,15 +176,11 @@ main section article h3 {
   padding-bottom: 0.25em;
 }
 
-main section ul {
-  list-style-type: circle;
-}
-
 main aside {
-  padding-left: 2.5%;
+  width: 215px;
+  float: right;
+  padding-left: 20px;
   padding-bottom: 20px;
-  flex-basis: 22%;
-  order: 1;
 }
 
 main aside h2 {
@@ -239,6 +219,7 @@ main ul li {
 
 /* the styles for the footer */
 footer {
+  clear: both;
   border-top: 3px solid #931420;
   background-color: #931420;
   color: white;
@@ -246,60 +227,4 @@ footer {
 footer p {
   text-align: center;
   padding: 1em 0;
-}
-
-/* styles for table in portrait view */
-@media only screen and (max-width: 959px) {
-  main section h1 {
-    font-size: 135%;
-  }
-  main section h2 {
-    font-size: 120%;
-  }
-
-  main aside h2 {
-    font-size: 120%;
-  }
-}
-
-/* styles for mobile in landscape orientation */
-@media only screen and (max-width: 767px) {
-  header {
-    text-align: center;
-  }
-  header img {
-    float: none;
-  }
-
-  #nav_menu {
-    display: none;
-  }
-  #mobile_menu {
-    display: block;
-  }
-  .slicknav_menu {
-    background-color: #800000 !important;
-  }
-
-  main section {
-    width: 95%;
-    order: 1;
-  }
-  main aside {
-    padding-right: 2.5%;
-    width: 95%;
-  }
-  main aside div.speakers {
-    column-count: 2;
-  }
-  main section article img {
-    max-width: 30%;
-  }
-}
-
-/* styles for mobile in portrait orientation */
-@media only screen and (max-width: 479px) {
-  body {
-    font-size: 90%;
-  }
 }
