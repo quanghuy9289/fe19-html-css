@@ -312,6 +312,12 @@ main section ul {
     grid-column: 1/ span 13;
     margin-top: 0;
   }
+
+  .slicknav_menu {
+    width: 98%;
+    position: absolute;
+  }
+  
   header h3 {
     grid-row: 3/ span 1;
     grid-column: 1/ span 13;
