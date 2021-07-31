@@ -1,379 +1,321 @@
-/* common style */
-* {
-  margin: 0;
-  padding: 0;
+/* So the HTML5 structural tags work in older browsers */
+article, aside, figure, footer, header, nav, section {
+    display: block;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+/* the styles for the elements */
+body{
+	/* width:9; */
+	width: 800px;
+	margin: 20px auto;
+	border: 3px solid #931420;
+	background-color: #fffded;
+	/* padding: 0 30px; */
+	font-family: Arial, Helvetica, sans-serif;
+    font-size: 87.5%;
+
 }
 
-html {
-  background-image: -moz-linear-gradient(to top, white 0%, #facd8a 100%);
-  background-image: -webkit-linear-gradient(to top, white 0%, #facd8a 100%);
-  background-image: -o-linear-gradient(to top, white 0%, #facd8a 100%);
-  background-image: linear-gradient(to top, white 0%, #facd8a 100%);
-  background-repeat: no-repeat;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 100%;
-  width: 90%;
-  max-width: 1024px;
-  margin: 15px auto;
-  background-color: white;
-  padding: 15px 25px;
-  border: 1px solid black;
-  box-shadow: 0px 0px 10px 2px black;
-  box-sizing: border-box;
-  display: grid;
-  grid-template: 80px auto 1fr 60px / repeat(12, 1fr);
-}
 
-section,
-aside,
-article {
-  margin-top: 1.5em;
-}
 
-h1,
-h2 {
-  margin-bottom: 0.25em;
-}
+/* the styles for the header */
+header{
+	border-bottom: 3px solid #931420;
+	/* padding-bottom: 10px;  */
+	padding-top: 1.5em;
+	padding-bottom: 2em;
+	background-image: linear-gradient(30deg,#f6bb73 0%, white 50%,#f6bb73 80%, #f6bb73 100% );
+	width: 800px;
 
-h1 {
-  font-size: 250%;
 }
-h2 {
-  font-size: 150%;
-}
-
-a {
-  font-weight: bold;
-}
-a:link,
-a:visited {
-  color: #931420;
-}
-a:hover,
-a:focus {
-  color: black;
-}
-
-em {
-  font-weight: bold;
-}
-
-p {
-  padding: 0.25em 0;
-}
-
-/* style for header */
-header {
-  grid-row: 1/2;
-  grid-column: 1 / span 12;
-  padding-bottom: 1em;
+header h2{
+	font-size: 170%;
+	color: #800000;}
+header h3{
+	font-size: 130%;
+	font-style: italic;
 }
 header img {
-  float: left;
+		float: left;
+		padding: 0 30px;
+}
+.shadow em{
+	text-shadow: 5px 0px 2px #800000;
 }
 
-header h2 {
-  color: orange;
-  text-shadow: 2px 2px 2px black;
-  text-align: center;
-}
 
-header h3 {
-  color: green;
-  text-align: center;
-  font-style: italic;
-}
-
-/* style for main */
-main {
-  grid-row: 3/4;
-  grid-column: 1 / span 12;
-  display: grid;
-  grid-template: auto / repeat(12, 1fr);
-  align-items: start;
-}
-
-/* style for aside */
-aside {
-  grid-row: 1/2;
-  grid-column: 9 / span 4;
-  padding: 25px;
-  box-sizing: border-box;
-  background-color: #ffebc6;
-}
-
-aside h2 {
-  font-size: 130%;
-  margin-bottom: 0.5em;
-}
-aside h3 {
-  font-size: 100%;
-  margin-bottom: 0.2em;
-  color: #931420;
-}
-aside p {
-  margin-top: 0.5em;
-}
-
-aside ul {
-  padding-left: 1em;
-}
-
-/* style for section */
+/* the styles for the section */
 section {
-  grid-row: 1/2;
-  grid-column: 1 / span 8;
-  box-sizing: border-box;
-  padding-right: 25px;
+	clear: left;
+	padding: 0 30px;
 }
+section img{
+	padding-bottom: 1em;
+}
+section ul li{
+	padding-bottom: 0.35em;
+}
+section p{
+	padding-bottom: 0.5em;
+}
+section blockquote{
+	padding: 0 2em;
+	font-style: italic;
+}
+h1{
+	font-size: 150%;
+	/* border-top: 3px solid #931420;
+	border-bottom: 3px solid #931420; */
+	/* border: 5px double #931420;
+	border-radius: 10px; */
+	padding: 0.3em 0;
+	/* box-shadow: 3px 3px 0 3px #931420; */
+	padding-left: 5px;
+}
+section h2{
+	font-size: 130%;
+	color: #800000;
+	padding: 0.5em 0.25em 0 0;
+}
+section h3{
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+section a {
+	font-style: italic;
+}
+ul{
+	padding-left: 1.25em;
+	padding-bottom: 0.25em;
+}
+main{
+	float: left;
+	width: 215px;
+	
+}
+aside{
+	float: right;
+	width: 525px;
+	
+	
 
-section ul {
-  margin: 0 0 1.5em 1.25em;
+	
 }
-section li {
-  padding-bottom: 0.35em;
-  padding-left: 0.25em;
-}
+/* the styles for the footer */
 
-section h1 {
-  font-size: 200%;
-}
-
-section .date_passed {
-  color: gray;
-}
-
-section .indent {
-  text-indent: 2em;
-}
-
-section #contact_us {
-  margin-top: 1.5em;
-}
-
-/* style for article */
-article {
-  box-sizing: border-box;
-  padding-right: 25px;
-  grid-row: 1/2;
-  grid-column: 1 / span 8;
-  /* -moz-column-count: 2;
-  -webkit-column-count: 2;
-  column-count: 2; */
-}
-
-article h1 {
-  font-size: 200%;
-}
-
-article img {
-  float: left;
-  margin-bottom: 10px;
-  margin-right: 15px;
-}
-
-article p {
-  font-size: 95%;
-}
-
-article .date_passed {
-  color: gray;
-}
-
-article .indent {
-  text-indent: 2em;
-}
-
-article #contact_us {
-  margin-top: 1.5em;
-}
-
-/* style for footer */
 footer {
-  grid-row: 4/5;
-  grid-column: 1 / span 12;
-  margin-top: 1.5em;
-  padding-top: 5px;
-  border-top: 2px solid #facd8a;
+	
+	background-color: #931420;
+	padding: 0 30px;
+	clear: both;
+
 }
-footer p {
-  text-align: right;
-  font-size: 80%;
+footer p{
+	color: white;
+	border: 3px solid #931420;
+	padding: 1em 0px;
+	text-align: center;
+	margin: 0;
+
+	
+}
+/* ARTICLE ELEMENT */
+article h1{
+	font-size: 150%;
+	padding-top: 0.5em;
+	padding-bottom: 0.25em;
+	margin: 0;
+
+}
+article{
+	padding: 0.5em 0;
+	border-top: 2px solid #800000;
+	border-bottom: 2px solid #800000;
+}
+article img{
+	float: right;
+	margin-top: 10px;
+	margin-left: 5px;
+	/* border: 1px solid black	; */
+	
+}
+article h2{
+	padding: 0;
+}
+article h3{
+	font-size: 105%;
+	padding-bottom: 0.25em;
+}
+/* nav-menu */
+#nav-menu{
+	margin: 0;
+	padding: 0;
+
+}
+#nav-menu ul{
+	display: grid;
+	grid-template: auto / repeat(5, 1fr);
+	position: relative;
+	background-color: #800000;
+
+}
+#nav-menu ul li{
+	width: 140px;
+	text-align: center;
+	height: 30px;
+	list-style: none;
+	padding-top: 10px;
+
+	
+}
+#nav-menu ul li a{
+	color: white;
+	text-decoration: none;
+
+}
+#nav-menu ul ul{
+	display: none;
+	position: absolute;
+	top: 100%;
+}
+#nav-menu ul li a:hover{
+	color: blue;
+}
+#nav-menu ul li:hover ul{
+	display: block;
+}
+#nav-menu ul ul li{
+	
+	color: white;
 }
 
-/* multi-tiers navigation menu */
-#nav-menu {
-  grid-row: 2/3;
-  grid-column: 1 / span 12;
+/* 
+.menucha > li{
+	float: left;
+	list-style: none;
+	background-color: #800000;
 }
-#nav-menu ul {
-  display: grid;
-  grid-template: auto / repeat(4, 1fr);
-  list-style-type: none;
-  position: relative;
+
+.menucha  li  a{
+	display: block;
+	width: 160px;
+	text-align: center;
+	text-decoration: none;
+	padding: 1em 0;
+	color: white;
+	font-weight: bold;
 }
-/* #nav-menu ul li {
-  float: left;
-  width: 25%;
+.menucha{ 
+	display: inline;
+	position: relative;
+	padding: 0;
+}
+.submenu {
+	display: none;
+	position: absolute;
+	width: 100%;
+
+
+
+}
+.submenu li {
+	list-style: none;
+	background-color: #800000;
+	padding: 5px 5px;
+	color: white;
+	font-weight: bold;
+	border-bottom: 1px solid white;
+	text-align: center;
+	
+}
+.submenu >li >a{
+	color: white;
+	
+}
+.menucha > li > a:hover{
+	background-color: orange;
+}
+
+.menucha > li:hover >ul{
+	display: block;
+}
+.menucha>ul::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.menucha>li>a>.lastitem{
+	width: px;
+	
 } */
-#nav-menu ul li a {
-  display: block;
-  text-decoration: none;
-  padding: 0.7em 1em;
-  font-weight: bold;
-  background-color: #facd8a;
-  text-align: center;
+/* tablet in portrait view */ 
+@media only screen and (max-width:959px){
+ section h1{
+	font-size: 135%;
+	
+}
+#mobile-menu{
+	display: none;
+}
+section h2{
+	font-size: 120%;
+}
+aside h2{
+	font-size: 120%;
+} 
+#mobile_menu{ display: block;}
+}
+/* phone landscape orientation */
+@media only screen and (max-width: 767px) {	
+	header img{ 
+		float: none;
+		padding-left: 80px;
+	}
+	#mobile-menu{
+		display: block;
+	}
+	#nav-menu{
+		display: none;
+	}
+	aside{
+		float: none;
+	}
+	main{
+		float: none;
+	}
+	header{
+		text-align: center;
+	}
+	section{
+		padding: 0 120px;
+	}
+	article img{
+		width: 50%;
+		padding: 10px 10px;
+	}
+	section main {
+		columns: 2;
+		padding: 20px 20px;
+		column-gap: 50px;
+		
+	}
+	#mobile_menu{
+		display: block;
+	}
+
+}
+#mobile_menu{
+	display: none;
 }
 
-#nav-menu ul ul {
-  width: 25%;
-  display: none;
-  position: absolute;
-  top: 100%;
-  padding: 0;
-  margin: 0;
-}
-#nav-menu ul ul li {
-  clear: both;
-  position: relative;
-}
-#nav-menu ul li:hover > ul {
-  display: block;
-}
-#nav-menu > ul::after {
-  display: block;
-  clear: both;
-  content: "";
-}
-#nav-menu ul ul li ul {
-  width: 100%;
-  position: absolute;
-  top: 0;
-  left: 100%;
-}
-#nav-menu ul li:hover ul li:hover ul li {
-  width: 100%;
-}
-#nav-menu ul li.last-item ul li ul {
-  position: absolute;
-  top: 0;
-  left: -100%;
-}
-
-#mobile-menu {
-  display: none;
-  grid-row: 2/3;
-  grid-column: 1 / span 12;
-}
-
-/* media queries */
-/* tablet portrait to standard 960 */
+	
 
 
-@media only screen and (max-width: 959px) {
-  #nav-menu ul li a {
-    font-size: 0.875em; /* 14 / 16 */
-  }
-  section h1,
-  article h1 {
-    font-size: 1.5em; /* 24 / 16 */
-  }
-  section h2,
-  aside h2 {
-    font-size: 1.125em; /* 18 / 16 */
-  }
-}
 
-/* mobile landscape to tablet portrait */
-@media only screen and (max-width: 767px) {
-  #nav-menu {
-    display: none;
-  }
-  #mobile-menu {
-    display: block;
-  }
-  .slicknav_menu {
-    background-color: #e9deaf !important;
-  }
-  body {
-    width: 100%; /* full width of screen */
-    margin: 0; /* no margins */
-    border: none; /* no border */
-    grid-template: auto auto auto 60px / repeat(12, 1fr);
-  }
-  header,
-  footer p {
-    text-align: center;
-  }
-  header h2 {
-    font-size: 1.625em; /* 26 / 16 */
-    margin: 0.4em 0 0.25em 0;
-  }
-  header h3 {
-    font-size: 1em; /* base font size */
-    margin-left: 0;
-  }
-  header img {
-    float: none;
-  }
-  article img {
-    float: left;
-    width: 50%;
-    margin-right: 2%;
-  }
-  aside {
-    width: 100%;
-    float: none;
-    margin-top: 0.5em;
-  }
-}
 
-/* mobile portrait to mobile landscape */
-@media only screen and (max-width: 479px) {
-  header h2 {
-    font-size: 1.375em; /* 22 / 16 */
-  }
-  header h3 {
-    font-size: 0.8125em; /* 13 / 16 */
-  }
-  p {
-    font-size: 0.875em; /* 14 / 16 */
-  }
-  main {
-    grid-template: auto auto / auto;
-  }
-  section,
-  article {
-    grid-row: 2/3;
-    grid-column: 1 / span 12;
-    margin: 0;
-  }
-  aside {
-    grid-row: 1/2;
-    grid-column: 1 / span 12;
-    margin-bottom: 1em;
-  }
-  section h1,
-  article h1,
-  section h2,
-  aside h2 {
-    font-size: 1em; /* base font size */
-  }
-  section li,
-  aside li {
-    font-size: 0.875em; /* 14 / 16 */
-  }
-  article img {
-    float: none;
-    width: 100%;
-    margin-right: 0;
-  }
-  aside h3 {
-    font-size: 0.9375em; /* 15 / 16 */
-  }
-  footer p {
-    font-size: 0.6875em; /* 11 / 16 */
-  }
-}
+
+
+
