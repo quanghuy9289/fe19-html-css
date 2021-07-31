@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="short-cut icon" href="/musicPlayer/asset/img/4.jpg" />
+    <link
+      rel="stylesheet"
+      href="../../../../bootstrap-4.6.0-dist/css/bootstrap.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a href="" class="navbar-brand">Blog Brand</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse">
+          <i class="navbar-toggler-icon"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a href="" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">About</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Services</a></li>
+            <li class="nav-item"><a href="./doContact.html" class="nav-link">Contact</a></li>
+          </ul>
+          <form action="post" class="form-inline">
+            <input
+              aria-label="Search"
+              placeholder="Search post..."
+              type="search"
+              class="form-control mr-sm-2"
+            />
+            <button class="btn btn-primary" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div class="container">
+      <div class="jumbotron jumbotron-fluid py-4 mt-5 pl-3">
+        <h1 class="display-4 text-warning">Hot new today!</h1>
+        <p class="lead">Get free voucher for the course HTML5 and CSS3.</p>
+        <a class="btn btn-primary" href="#" role="button">Get now</a>
+      </div>
+      <div class="row">
+        <div class="col-md-8">
+          <div class="card mb-4">
+            <img src="./img/image.jpg" alt="" class="img-card-top" />
+            <div class="card-body">
+              <h2 class="card-title">Post title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                laboriosam. Dicta expedita corporis animi vero voluptate
+                voluptatibus possimus, veniam magni quis!
+              </p>
+              <a href="" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer py-4 text-muted">
+              Posted on January 1, 2020 by
+              <a href="#">Start Bootstrap</a>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img src="./img/image.jpg" alt="" class="img-card-top" />
+            <div class="card-body">
+              <h2 class="card-title">Post title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                laboriosam. Dicta expedita corporis animi vero voluptate
+                voluptatibus possimus, veniam magni quis!
+              </p>
+              <a href="" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer py-4 text-muted">
+              Posted on January 1, 2020 by
+              <a href="#">Start Bootstrap</a>
+            </div>
+          </div>
+          <div class="card mb-4">
+            <img src="./img/image.jpg" alt="" class="img-card-top" />
+            <div class="card-body">
+              <h2 class="card-title">Post title</h2>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Reiciendis aliquid atque, nulla? Quos cum ex quis soluta, a
+                laboriosam. Dicta expedita corporis animi vero voluptate
+                voluptatibus possimus, veniam magni quis!
+              </p>
+              <a href="" class="btn btn-primary">Read More &rarr;</a>
+            </div>
+            <div class="card-footer py-4 text-muted">
+              Posted on January 1, 2020 by
+              <a href="#">Start Bootstrap</a>
+            </div>
+          </div>
+          <ul class="pagination justify-content-center mb-4">
+              <li class="page-item"><a href="" class="page-link">&larr; Older</a></li>
+              <li class="page-item disabled"><a href="" class="page-link">Newer &rarr;</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+            <div class="card mb-4">
+                <div class="card-header">Search</div>
+                <div class="card-body">
+                    <form action="" class="form-inline input-group">
+                        <input type="text" class="form-control">
+                        <button class="input-group-append btn btn-dark ">Go !</button>
+                    </form>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">Categories</div>
+                <div class="card-body">
+                    <div class="row">
+                        <ul class="col-lg-6 list-unstyled">
+                            <li><a href="">dsadsa</a></li>
+                            <li><a href="">dsada</a></li>
+                            <li><a href="">cccccccc</a></li>
+                        </ul>
+                        <ul class="col-lg-6 list-unstyled">
+                            <li><a href="">ddddd</a></li>
+                            <li><a href="">eeeeeee</a></li>
+                            <li><a href="">fffffff</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-4">
+                <div class="card-header">Side Widget</div>
+                <div class="card-body">
+                    <p class="card-text">You can put anything you want inside of these side widgets. They are easy to use, and feature the new Bootstrap 4 card containers!</p>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      window.addEventListener(
+        "load",
+        function () {
+          $("[data-toggle=popover]").popover();
+          $("[data-toggle=tooltip]").tooltip();
+        },
+        false,
+      );
+    </script>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>San Joaquin Valley Town Hall</title>
+  <link rel="shortcut icon" href="images/favicon.ico" />
+  <link rel="stylesheet" href="styles/normalize.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/slicknav.css" />
+  <link rel="stylesheet" href="./table.css">
+    <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $("#nav_menu").slicknav({ prependTo: "#mobile_menu" });
+      });
+    </script>
+</head>
+
+<body>
+  <header>
+    <img src="images/town_hall_logo.gif" alt="Town hall logo" height="80" />
+    <h2>San Joaquin Valley Town Hall</h2>
+    <h3>
+      Celebrating our <span class="shadow">75<sup>th</sup></span> Year
+    </h3>
+  </header>
+
+  <nav id="mobile_menu"></nav>
+  <nav id="nav_menu">
+    <ul>
+      <li class="current"><a href="index.html">Home</a></li>
+      <li><a href="index.html">Speakers</a></li>
+      <li><a href="index.html">Luncheons</a></li>
+      <li><a href="index.html">Tickets</a></li>
+      <li>
+        <a href="index.html">About As</a>
+        <ul>
+          <li><a href="index.html">Our History</a></li>
+          <li><a href="index.html">Board of Directors</a></li>
+          <li><a href="index.html">Past Speakers</a></li>
+          <li><a href="index.html">Contact Information</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section>
+      <h1>About Our Luncheons</h1>
+      <p>Make reservations for lunch in the lower lobby of the William Saroyan Theater after each lecture. These informal sessions provide an excellent opportunity to talk with the speaker.</p>
+      <h2>Season luncheon tickets: $120</h2>
+      <p>These tickets can be ordered at the same time as the season lecture ticket.</p>
+      <h2>Individual luncheon tickets: $25</h2>
+      <p>A limited number of these tickets are available and can be purchased by calling 559.555.1212. These ticket must be purchased by the Friday prior to the lecture.</p>
+      <h2>The luncheon schedule</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Year</th>
+            <th>Date</th>
+            <th>Speaker</th>
+            <th>Cost</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <tr>
+
+              <th rowspan="3">2017</th>
+            </tr>
+            <tr>
+              <td>October 19</td>
+              <td>Jeffrey Toobin</td>
+              <td>$26</td>
+            </tr>
+            <tr class="lastChild">
+              <td>November 16</td>
+              <td>Andress Ross Sorkin</td>
+              <td>$25</td>
+            </tr>
+          </tr>
+          <tr>
+            <tr>
+
+              <th rowspan="5">2018</th>
+            </tr>
+            <tr>
+              <td>January 18</td>
+              <td>Amy Chua</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>February 16</td>
+              <td>Scott Sampson</td>
+              <td>$25</td>
+            </tr>
+            <tr>
+              <td>March 216</td>
+              <td>Carlos Eire</td>
+              <td>$25</td>
+            </tr>
+            <tr class="lastChild">
+              <td>April 18</td>
+              <td>Ronal Tynan</td>
+              <td>$25</td>
+            </tr>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <tr>
+              <td></td>
+              <td class="total" colspan="2">Cost of 6 individual luncheons tickets</td>
+              <td>$150</td>
+            </tr>
+            <tr>
+              <td></td>
+              <td class="total" colspan="2">Cost of 6 individual luncheons tickets</td>
+              <td>$150</td>
+            </tr>
+          </tr>
+          <tr>
+            <td colspan="3">Savings</td>
+            <td>$30</td>
+          </tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <aside>
+      <h2>Guest speakers</h2>
+      <div class="speakers">
+        <h3>October <br /><a href="speakers/toobin.html">Jeffrey Toobin</a></h3>
+        <img src="images/toobin75.jpg" alt="Jeffrey Toobin" />
+
+        <h3>November <br /><a href="speakers/sorkin.html">Andrew Ross Sorkin</a>
+        </h3>
+        <img src="images/sorkin75.jpg" alt="Andrew Ross Sorkin" />
+
+        <h3>December<br /><a href="speakers/chua.html">Amy Chua</a></h3>
+        <img src="images/chua75.jpg" alt="Amy Chua" />
+
+        <h3>January<br /><a href="speakers/toobin.html">Amy Chua</a></h3>
+        <img src="images/toobin75.jpg" alt="Jeffrey Toobin" />
+      </div>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2020, San Joaquin Valley Town Hall, Fresno, CA 93755</p>
+  </footer>
+</body>
+
+</html>

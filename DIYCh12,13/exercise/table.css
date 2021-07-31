@@ -1,0 +1,25 @@
+table th,td {
+    padding: 0.2em 0.7em;
+}
+tfoot>tr:last-child td:first-child{
+    text-align: right;
+    font-weight: bolder;
+}
+tfoot .total {
+    font-weight: bolder;
+
+}
+tbody th {
+    font-weight: 300;
+}
+thead th {
+    text-align: left;
+}
+thead, tfoot tr:last-child {
+    border-top: 2px solid #800000;
+    border-bottom: 2px solid #800000;
+}
+tbody .lastChild {
+    border-bottom: 2px solid #800000;
+
+}

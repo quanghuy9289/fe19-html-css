@@ -1,0 +1,44 @@
+fieldset {
+    border-radius: 5px;
+    border: 2px solid #ccc;
+    padding: 15px;
+}
+form legend {
+    font-weight: bold;
+}
+form label {
+    float: left;
+    text-align: right;
+    width: 10em;
+    margin: 0 auto;
+
+}
+form label.non-float {
+    float: none;
+    margin-left: 10px;
+}
+form input.payment-radio {
+    margin-left: 50px;
+    width: auto;
+}
+form input, form select {
+    /* float: right; */
+    text-align: left;
+    width: 12em;
+    margin: 0 0 0.5em 0.5em;
+    vertical-align: middle;
+}
+form input:required, form input[required] {
+    border: 2px solid #800000;
+
+}
+form button {
+    padding: 0 20px;
+}
+form fieldset:last-child {
+    text-align: center;
+    margin-right: 30px;
+}
+form fieldset:last-child legend {
+    text-align: left;
+}
