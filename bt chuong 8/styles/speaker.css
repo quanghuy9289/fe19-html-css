@@ -1,0 +1,160 @@
+/* common style */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  background-image: -moz-linear-gradient(top, white 0%, #facd8a 100%);
+  background-image: -webkit-linear-gradient(top, white 0%, #facd8a 100%);
+  background-image: -o-linear-gradient(top, white 0%, #facd8a 100%);
+  background-image: linear-gradient(top, white 0%, #facd8a 100%);
+  background-repeat: no-repeat;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 100%;
+  width: 992px;
+  margin: 15px auto;
+  background-color: white;
+  padding: 15px 25px;
+  border: 1px solid black;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 2px black;
+  box-sizing: border-box;
+}
+
+article,
+aside {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+
+h1,
+h2 {
+  margin-bottom: 0.25em;
+}
+
+h1 {
+  font-size: 250%;
+}
+h2 {
+  font-size: 150%;
+}
+
+a {
+  font-weight: bold;
+}
+a:link {
+  color: green;
+}
+a:hover,
+a:focus {
+  color: blue;
+}
+
+em {
+  font-weight: bold;
+}
+
+ul {
+  margin: 0 0 1.5em 1.25em;
+}
+li {
+  padding-bottom: 0.35em;
+  padding-left: 0.25em;
+}
+
+p {
+  padding: 0.25em 0;
+}
+
+/* style for header */
+header {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #facd8a;
+}
+header img {
+  float: left;
+}
+
+header h1 {
+  color: orange;
+  text-shadow: 2px 2px 2px black;
+  text-align: center;
+}
+
+header h2 {
+  color: green;
+  text-align: center;
+  font-style: italic;
+}
+
+/* style for aside */
+aside {
+  width: 350px;
+  padding-left: 25px;
+  float: right;
+  box-sizing: border-box;
+}
+
+aside h2 {
+  font-size: 130%;
+  margin-bottom: 0.5em;
+}
+aside h3 {
+  font-size: 100%;
+  color: green;
+  margin-bottom: 0.2em;
+}
+aside p {
+  margin-bottom: 0.5em;
+}
+
+/* style for article */
+article {
+  width: 590px;
+  box-sizing: border-box;
+  padding-right: 25px;
+  border-right: 2px solid #facd8a;
+  /* -moz-column-count: 2;
+  -webkit-column-count: 2;
+  column-count: 2; */
+}
+
+article h1 {
+  font-size: 200%;
+}
+
+article img {
+  float: left;
+  margin-bottom: 10px;
+  margin-right: 15px;
+}
+
+article p {
+  font-size: 95%;
+}
+
+article .date_passed {
+  color: gray;
+}
+
+article .indent {
+  text-indent: 2em;
+}
+
+article #contact_us {
+  margin-top: 1.5em;
+}
+
+/* style for footer */
+footer {
+  margin-top: 1.5em;
+  padding-top: 5px;
+  border-top: 2px solid #facd8a;
+}
+footer p {
+  text-align: right;
+  font-size: 80%;
+}
