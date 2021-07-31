@@ -122,6 +122,11 @@ section .ticket {
 	border-top: 2px solid #800000;
 }
 
+figure {
+	float: left;
+	font-weight: bold;
+}
+
 /* the styles for the section */
 aside {
 	height: 800px;

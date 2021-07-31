@@ -120,6 +120,7 @@ section img {
 
 figure {
 	float: right;
+	font-weight: bold;
 }
 
 section a {
