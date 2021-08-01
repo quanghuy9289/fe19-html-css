@@ -4,7 +4,7 @@
 }
 
 html {
-    font-size: 100%;
+
     background-color: #fff;
 }
 
@@ -14,10 +14,11 @@ p,a {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    width: 100%;
+    width: 98%;
     max-width: 800px;
+    font-size: 100%;
     margin: 0 auto;
-    border: 3px solid black;
+    border: 3px solid #800000;
     display: grid;
     grid-template: 115px 50px 1fr 50px/ repeat(12, 1fr);
     background-color: rgb(255, 253, 237);
@@ -55,28 +56,47 @@ header h3 {
 }
 
 #nav_menu {
-    
+    grid-row: 2/3;
+    grid-column: 1/13;
 }
 
 #nav_menu ul {
-    display: flex;
     list-style: none;
-    flex-direction: row;
+    position: relative;
 }
 
 #nav_menu ul li {
-    background-color: rgb(128, 0, 0);
-    width: 160px;
-    height: 50px;
     text-align: center;
-}   
+    line-height: 50px;
+    width: 20%;
+    background-color: #800000;
+    float: left;
+}
 
-#nav_menu a {
+#nav_menu ul li a {
     text-decoration: none;
     color: white;
-    font-weight: bold;  
     display: block;
-    line-height: 50px;
+    font-weight: bold;
+}
+
+#nav_menu ul li ul{
+
+    width: 160px;
+    display: none;
+}
+
+#nav_menu ul li ul li{
+  width: 100%;
+}
+
+#nav_menu ul a:hover {
+    cursor: pointer;
+    font-style: italic;
+}
+
+#nav_menu ul li:hover ul {
+    display: block;
 }
 
 main {
@@ -173,9 +193,7 @@ footer p {
 
 @media only screen and (max-width: 960px)
 {
-    body {
-        font-size: 90%;
-    }
+    
 }
 @media screen and (max-width: 767px)
 {
@@ -186,6 +204,7 @@ footer p {
         display: block;
         grid-row: 2/ span 1;
         grid-column: 1/ span 12;
+        z-index: 1;
     }
 }
 @media only screen and (max-width: 479px) {
