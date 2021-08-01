@@ -58,7 +58,7 @@
                 <legend>Member lnformation</legend>
                 <form action="" method="POST">
                     <label for="email">E-mail:</label>
-                    <input type="email" id="email" placeholder=""><br>
+                    <input type="email" id="email" placeholder="" required autocomplete="on"><br>
                     <label for="first_name ">First Name:</label>
                     <input type="text" id="first_name" name="fist_name" placeholder="" autocomplete="on"><br>
                     <label for="last_name">Last Name:</label>
@@ -85,7 +85,7 @@
                         <option value="s" selected>Season Package</option>
                     </select><br>
                     <label for="number_of_tickets">Number of Tickets:</label>
-                    <input type="number" name="number_of_tickets" id="number_of_tickets" placeholder="Number of single tickets">
+                    <input type="number" name="number_of_tickets" id="number_of_tickets" placeholder="Number of single tickets" required>
                 </form>
             </fieldset>
 
@@ -106,9 +106,9 @@
                         <option value="m">Mastercard</option>
                     </select><br>
                     <label for="card_number">Card Number</label>
-                    <input type="number" name="card_number" id="card_number" placeholder="16 digits"><br>
+                    <input type="number" name="card_number" id="card_number" placeholder="16 digits" required><br>
                     <label for="date">Expiration Date:</label>
-                    <input type="date" name="date" id="date" value="2021-07-24" min="2021-01-01" max="2021-12-31">
+                    <input type="date" name="date" id="date" value="2021-07-24" min="2021-01-01" max="2021-12-31" required>
                 </form>
             </fieldset>
 
